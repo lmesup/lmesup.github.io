@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="de" style="display: none;">
+
+<head>
+
+    <title>Non-Voters</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://lmesup.github.io/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+
+    <link href="https://lmesup.github.io/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://lmesup.github.io/css/styles.css" rel="stylesheet" />
+
+    <!-- CSS ENDE -->
+
+
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link href="https://lmesup.github.io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500|Roboto:400,500&display=swap" rel="stylesheet">
+
+    <!-- FONTS ENDE -->
+
+</head>
+
+
+<body>
+
+    <span id="struktur_navbar"></span>
+
+    <div class="container" id="main">
+        <!--main-->
+
+        <!-- <div class="jumbotron visible-lg visible-md visible-sm"></div> -->
+
+        <!-- CSS TEIL NUR AKTIVIEREN, WENN TITELBILD DEAKTIVIERT! -->
+        <style>
+            #mainnav {
+                margin-top: 40px;
+            }
+
+        </style>
+
+        <div class="row" id="tiles">
+
+            <span id="struktur_menu"></span>
+
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <!--col2-->
+                <div class="col2">
+                    <!--col2-->
+
+
+                    <!-- ############################################ -->
+
+
+                    <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                        <!--col2row1-->
+
+                        <p>
+                            <!-- top all-->
+                            <div style="margin-top: 45px; margin-bottom: 30px;  border-bottom: solid 1px #2C3744;">
+                                <h2>Influence of non-voters on electoral outcomes</h2>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <!--top1-->
+                                <p>
+                                    <h5>Projektleiter</h5>
+                                    <a href="https://lmesup.github.io/kohler.html" target="_blank">Prof. Dr. Ulrich Kohler</a>
+                                </p>
+                            </div>
+                        </p>
+                        <!--top all-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+
+                            <p>
+                                <!--Projektbeschreibung-->
+                                <h5>1. Introduction</h5>
+
+                                <p>
+                                    Non-voters are often the largest group in the electorate and this is considered a problem in the public and also by many social scientists (Lijphart 1997). An analytic question raised by the debate on the importance of non-voting is stated by Bernhagen and Marsh (2007: 548): ‘If turnout was 100 percent, would it affect the election result?’ One answer to this question can be given by a statistic proposed by Kohler and Rose (2010). The index calculates the proportion of votes the runner-up party would have to win among the non-voters in order to change hands with the party who gains the plurality of votes (hereafter: the “winner”). If this Kohler-Rose-Index is higher than 100%, it would be impossible for the runner up to catch up the winning party by gaining votes from the non-voters.
+                                </p>
+
+                                <p>
+                                    This website documents the calculation of the Kohler-Rose-Index and provides datasets and graphical displays of it for
+                                </p>
+
+                                <p>
+                                    <ul>
+                                        <li>all German federal elections since 1949
+                                            <span><a href="https://lmesup.github.io/html/kri/kri_btw.html" target="_blank">mehr</a></span></li>
+                                        <li>all German state elections since 1949
+                                            <span><a href="https://lmesup.github.io/html/kri/kri_ltw.html" target="_blank">mehr</a></span></li>
+                                        <li>Parliamentary elections in European countries since 1990
+                                            <span><a href="https://lmesup.github.io/html/kri/kri_eed.html" target="_blank">mehr</a></span></li>
+                                        <li>American presidential elections<a href="https://lmesup.github.io/html/kri/kri_USpres.html" target="_blank">mehr</a></li>
+                                    </ul>
+                                </p>
+
+                                <p>
+                                    See <span><a href="https://lmesup.github.io/html/kri/documentation.pdf" target="_blank">Kohler et al. (2012)</a></span>
+                                    for further details of the contents of the website.
+                                </p>
+
+
+                                <h5>2. Derivation of the Kohler-Rose-Index</h5>
+                                <p>
+                                    Let W and R be the absolute numbers of valid votes of the winning and runner-up party respectively, and L be the absolute numbers of non-voters that could have participated in the election (i.e. the Leverage). Assume that the proportion of the non-voters who vote for the runner up party would be p. Then, the new number of votes for this party will be
+                                </p>
+
+                                \begin{equation}
+                                R^* = R + _pL
+                                \end{equation}
+
+                                <p>
+                                    Assume further that the winning party and the other parties hold their relative proportions, w and o, among the non voters left behind by the runner up parties. Under this condition the number of votes for the winner will become
+                                </p>
+
+                                \begin{equation}
+                                W^*=W + (1 - p - \frac{o}{w+o} (1 - p)) L
+                                \end{equation}
+
+                                <p>
+                                    Setting the difference between (2) and (1) to zero, and solving for p leads to the following formula for the tipping point (i.e. the Kohler-Rose-Index):
+                                </p>
+
+                                \begin{equation}
+                                p_{KR} = \frac{W - R + (1-\frac{o}{w+o}) L}{L(2-\frac{o}{w+o})}
+                                \end{equation}
+
+                                <p>
+                                    Important Note: The formula above differs slightly from the formula published by Kohler and Rose (2010). In the original publication the sum of the vote proportions of the winner, the runner up party, and the other parties could be above 1 even for \(p&lt; 1\). The formula here corrects this. Effectively \(p_{KR}\) tend to be slightly higher with the new formula, especially if there are many voters for other parties.
+                                </p>
+
+                                <h5>3. Further assumptions used</h5>
+                                <p>
+                                    In the formula for the Kohler-Rose-Index there is the unknown quantity of available non-voters, L. Conceptually, the number of available non-voters is equal to the maximum turnout minus the observed valid turnout, with maximum turnout being the highest possible turnout. Kohler and Rose (2010) argue that the highest possible turnout cannot be 100% for a number of reasons. They therefore use 100% - Absent electors (9.1%) - Invalid votes (4.8%) = 86.1% as maximum turnout. While setting up the data base for this web-page it has turned out, however, that several elections had a higher turnout than 86.1. Maximum turnout has been therefore set to 96%, which is slightly above the highest valid turnout observed in the data (Malta 1990: 95.5%).
+                                </p>
+
+                                <h5>4. Derived statistics for the likelihood of change</h5>
+                                <p>
+                                    The graphical displays show the actual vote proportion of the runner-up party together with the Kohler-Rose-Index. The more the two numbers deviate, the lower the likelihood that winner and runner-up could change hands due to the participation of non-voters. The downloadable datasets and tables also list two additional statistics that incorporate that idea:
+                                </p>
+
+                                <ul>
+                                    <li>\(D_{abs} = p - R/V \) with \(V\) being the absolute number of valid votes. This is just the difference between the actual vote proportion and the proportion required to close the gap to the winning party.</li>
+                                    <li>\(D_{rel}=\frac{p-R/V}{R/V}\) This expresses \(D_{abs}\) in terms of a proportion of the actual vote share of the runner-up party.</li>
+                                </ul>
+
+                                <p>
+                                    The higher \(D_{abs}\) and \(D_{rel}\) are, the lower is the likelihood of change due to non-voters. Note that we propose the following terms to describe the likelihood of change:
+                                </p>
+                                <ul>
+                                    <li>\(p &gt; 100:\) "impossible"</li>
+                                    <li>\(p &lt; 100\) and \(D_{rel} &gt; 100:\) "very unlikely"</li>
+                                    <li>\(p &lt; 100\) and \(D_{rel} &lt; 100\) and \(D_{abs} &gt; 10:\) "unlikely"</li>
+                                    <li>\(p &lt; 100\) and \(D_{rel} &lt; 100\) and \(5 &lt; D_{abs} &lt; 10:\) "possible"</li>
+                                    <li>\(p &lt; 100\) and \(D_{rel} &lt; 100\) and \(1 &lt; D_{abs} &lt; 5:\) "well possible"</li>
+                                    <li>\(p &lt; 100\) and \(D_{rel} &lt; 100\) and \(D_{abs} &lt; 1:\) "very possible"</li>
+                                </ul>
+
+                                <h5>Data sources</h5>
+                                <p>
+                                    <ul>
+                                        <li>The data for calculating the Kohler-Rose-Index for the German federal elections and the German state elections has been taken from Statistisches Bundesamt (2005) and the website of the German Federal returning officer
+                                            <span><a href="http://www.bundeswahlleiter.de/en/index.html" style="text-decoration: underline;" target="_blank">
+                                                    (http://www.bundeswahlleiter.de/en/index.html).</a></span></li>
+                                        <li>The data for calculating the Kohler-Rose-Index for the 32 European countries has been taken from the European Election Database (EED) on
+                                            <span><a href="http://www.nsd.uib.no/european_election_database" style="text-decoration: underline;" target="_blank">
+                                                    (http://www.nsd.uib.no/european_election_database).</a></span></li>
+                                        <li>The calculation of the Kohler-Rose-Index requires knowledge about the size of the voting eligible population. For American Presidential Elections this is an unknown quantity, and must be therefore estimated. We used the data of the United States Elections Project for this purpose.</li>
+                                        <li>The number of votes for candidates were taken from the Federal Election Commission
+                                            <span><a href="http://www.fec.gov/pubrec/electionresults.shtml" style="text-decoration: underline;" target="_blank">
+                                                    (http://www.fec.gov/pubrec/electionresults.shtml).</a></span> for this purpose.</li>
+                                    </ul>
+
+                                    We wish to thank Michael P. McDonald (United States Election Project) and Trond Kvamme (European Election Database) for their collaboration.
+                                </p>
+
+                                <h5>References</h5>
+                                <ul>
+                                    <li>Bernhagen, P., Marsh, M., 2007. The partisan effects of low turnout: Analyzing vote abstention as a missing data problem. Electoral Studies 26, 548–560.</li>
+                                    <li>Kohler, U., Rose, R., 2010. Under what circumstances could maximizing turnout alter an election result? Representation 46 (2), 119–138.</li>
+                                    <li>Lijphart, A., 1997. Unequal participation: Democracy’s unresolved dilemma - presidential address 1996. American Political Science Review 91 (1), 1–14.</li>
+                                    <li>Statistisches Bundesamt, 2005. Endgültiges Ergebnis der Wahl zum 16. deutschen Bundestag am 18. September 2005. Wirtschaft und Statistik 11/2005, 1153–1167.</li>
+                                </ul>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <!-- ############################################ -->
+
+                </div>
+                <!--col2-->
+            </div>
+            <!--col2-->
+        </div>
+        <!--tiles-->
+
+        <span id="struktur_footer"></span>
+
+    </div>
+    <!--main-->
+
+
+    <script>
+        $(document).on("allReady", function() {
+            setTimeout(function() {
+                $('html').show();
+            }, 100);
+        });
+        $(document).ready(function() {
+            $("#struktur_navbar").load("https://lmesup.github.io/struktur/struktur_navbar.html");
+        });
+        $(document).ready(function() {
+            $("#struktur_menu").load("https://lmesup.github.io/struktur/struktur_menu.html");
+        });
+        $(document).ready(function() {
+            $("#struktur_footer").load("https://lmesup.github.io/struktur/struktur_footer.html");
+            $(document).trigger("allReady");
+        });
+
+    </script>
+
+
+</body>
+
+</html>
