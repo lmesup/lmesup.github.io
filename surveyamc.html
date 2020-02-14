@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="de" style="display: none;">
+
+<head>
+
+    <title>SurveyAMC</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://lmesup.github.io/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+
+    <link href="https://lmesup.github.io/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://lmesup.github.io/css/styles.css" rel="stylesheet" />
+
+    <!-- CSS ENDE -->
+
+
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link href="https://lmesup.github.io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500|Roboto:400,500&display=swap" rel="stylesheet">
+
+    <!-- FONTS ENDE -->
+
+</head>
+
+
+<body>
+
+    <span id="struktur_navbar"></span>
+
+    <div class="container" id="main">
+        <!--main-->
+
+        <!-- <div class="jumbotron visible-lg visible-md visible-sm"></div> -->
+
+        <!-- CSS TEIL NUR AKTIVIEREN, WENN TITELBILD DEAKTIVIERT! -->
+        <style>
+            #mainnav {
+                margin-top: 40px;
+            }
+
+        </style>
+
+        <div class="row" id="tiles">
+
+            <span id="struktur_menu"></span>
+
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <!--col2-->
+                <div class="col2">
+                    <!--col2-->
+
+
+                    <!-- ############################################ -->
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+
+                            <div style="margin-top: 45px; margin-bottom: 30px; border-bottom: solid 1px #2C3744;">
+                                <h1>SurveyAMC</h1>
+                            </div>
+
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <p style="text-align=justify;">
+                                    The SurveyAMC package is targeted to create machine-readable questionnaires for selfadministered paper surveys in high typesetting quality.
+                                    The package provides a LaTeX style for designing the questionnaire’s general layout, and for formatting and placing the questions,
+                                    the answers, the check-boxes, the completion instructions and the filter instructions. After the completion of the survey,
+                                    the respondents’ answers can be automatically processed into a fully structured file using the freely available software
+                                    Auto-Multiple-Choice (Version 1.4.0) by Alexis Bienvenüe. In addition to the LaTeX style, the package contains companion programs
+                                    for a more general system in which both, paper and Online questionnaires, as well as several by-products are
+                                    automatically created from the same source file.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="visible-lg visible-md">
+                                    <img src="https://lmesup.github.io/surveyamc/logo.png" alt="Logo SurveyAMC" class="img-responsive center-block">
+                                </div>
+                            </div>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Example Questionnaire</h3>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-top: solid 1px #2C3744;  padding: 10px 0px 10px 0px">
+
+                                <div class="visible-lg visible-md" id="col2row2">
+                                    <div class='embed-responsive' style='padding-bottom:70%'>
+                                        <!-- <object data='https://lmesup.github.io/surveyamc/kn_quest.pdf' type='application/pdf' width='100%'></object> -->
+                                        <iframe src='https://lmesup.github.io/surveyamc/kn_quest.pdf' width='100%'></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="visible-sm visible-xs" id="col2row2">
+                                <img src="https://lmesup.github.io/surveyamc/kn_quest.png" alt="Example Questionnaire" width="70%" class="img-responsive center">
+                                view the full questionnaire > <a href="https://lmesup.github.io/surveyamc/kn_quest.pdf" target="_blank">pdf</a>
+                            </div>
+
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Notes on use</h3>
+                            <p style="border-top: solid 1px #2C3744;  padding: 0px 0px 10px 0px">
+                                <ul>
+                                    <li>To create machine-readable questionnaires with SurveyAMC you will need a latex distribution, an editor, a pdf-viewer and the LateX package "surveyamc.sty". Surveyamc.sty is made available on the SurveyAMC project
+                                        <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository.</a></span> You can download it there, copy it to your latex working directory and then load it with \usepackage{surveyamc} in the preambel of your tex document. For more detailed information see the documentation.</li>
+                                    <li>For processing the completed questionnaires into a dataset you will need the Auto-Multiple-Choice Software (Version 1.4.0).
+                                        Informations about installation and usage you can find at
+                                        <span><a href="https://www.auto-multiple-choice.net/" target="_blank">www.auto-multiple-choice.net</a></span>.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Documentation</h3>
+                            <p style="border-top: solid 1px #2C3744;  padding: 10px 0px 10px 0px">
+                                The SurveyAMC package is fully documented. The documentation helps you to get started with your own survey project. It contains:
+                                <ul>
+                                    <li> installation guidelines</li>
+                                    <li> example questionnaire </li>
+                                    <li> code snippets for a variety of question format options</li>
+                                    <li> style template for the general page layout</li>
+                                    <li> description of the "DRY" workflow for generating several survey products from one source file </li>
+                                </ul>
+                                The full <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/blob/master/documentation/doc_main.pdf" target="_blank">documentation</a></span> of SurveyAMC ist hosted on the project <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository</a></span>.
+                            </p>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Questionnaire Templates</h3>
+                            <p style="border-top: solid 1px #2C3744;  padding: 10px 0px 10px 0px">
+                                Different templates may help you to create your first questionnaire with SurveyAMC. You can find all templates on the SurveyAMC project
+                                <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository</a></span>. The list of templates is constantly being updated.
+                                Follow the link, copy the files to your project directory and adjust them to fit your personal needs.
+                            </p>
+
+                            <ul>
+                                <li>Template <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master/templates/documentation" target="_blank">"Documentation"</a></span></li>
+                                <li>Template <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master/templates/konstanz" target="_blank"> "Konstanz"</a></span></li>
+                            </ul>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Companion Programmes</h3>
+                            <p style="border-top: solid 1px #2C3744">
+                                <ul>
+                                    <li>automated codebook</li>
+                                    <li>label dataset, result tables or graphics </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 60px">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h5>Licence</h5>
+                            <p>
+                                Copyright (c) Claudia Saalbach 2019-2020. Surveyamc.sty is a modified version of automultiplechoice.sty. It is free software: you can redistribute it and/or modify it under the terms of the GNU GENERAL PUBLIC LICENSE Version 3. Surveyamc.sty is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A ARTICULAR PURPOSE. See the GNU General Public License for more details.
+                            </p>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+
+                    <!-- ############################################ -->
+
+                </div>
+                <!--col2-->
+            </div>
+            <!--col2-->
+        </div>
+        <!--tiles-->
+
+        <span id="struktur_footer"></span>
+
+    </div>
+    <!--main-->
+
+
+    <script>
+        $(document).on("allReady", function() {
+            setTimeout(function() {
+                $('html').show();
+            }, 100);
+        });
+        $(document).ready(function() {
+            $("#struktur_navbar").load("https://lmesup.github.io/struktur/struktur_navbar.html");
+        });
+        $(document).ready(function() {
+            $("#struktur_menu").load("https://lmesup.github.io/struktur/struktur_menu.html");
+        });
+        $(document).ready(function() {
+            $("#struktur_footer").load("https://lmesup.github.io/struktur/struktur_footer.html");
+            $(document).trigger("allReady");
+        });
+
+    </script>
+
+
+</body>
+
+</html>
