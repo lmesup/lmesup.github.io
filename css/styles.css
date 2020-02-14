@@ -1,0 +1,687 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #2C3744;
+}
+
+body h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2C3744;
+}
+
+/*------------------------------------*/
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label-success {
+    background-color: #527056;
+}
+
+.label-info {
+    background-color: #96B195;
+}
+
+.label-warning {
+    background-color: #c74375;
+}
+
+.label-default {
+    background-color: #CCAE00;
+}
+
+/*------------------------------------*/
+
+#header-nav {
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0px;
+}
+
+.container {
+    background-color: white;
+    color: white;
+}
+
+.navbar-header {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.navbar-header button.navbar-toggle {
+    background-color: #C2CDDB;
+    margin-left: 5px;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #2C3744;
+}
+
+#topNav {
+    border: 0;
+}
+
+#nav-list a {
+    color: #2C3744;
+}
+
+#nav-list li {
+    background-color: #C2CDDB;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#nav-list li:first-child {
+    font-weight: bold;
+}
+
+#nav-list a:hover,
+#topNav a:focus {
+    background-color: #2C3744;
+    color: white;
+}
+
+.navbar-brand {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2C3744;
+}
+
+.navbar-brand span {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#main {
+    background-color: white;
+}
+
+
+#main .jumbotron {
+    background-color: white;
+    border-radius: 0;
+}
+
+#main #logo {
+    margin-bottom: 15px;
+}
+
+
+#tiles {
+    background-color: white;
+}
+
+#col1 {
+    background-color: white;
+}
+
+#col1row1,
+#col1row2,
+#col1row3 {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#col1row1 {
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+#col2 {
+    background-color: white;
+    color: #2C3744;
+    margin-top: 10px;
+}
+
+
+
+
+#navLeft {
+    background-color: white;
+}
+
+.nav-stacked li {
+    background-color: #C2CDDB;
+    border-radius: 0;
+}
+
+.nav-stacked li a {
+    font-size: 1.1em;
+    color: #2C3744;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.nav-stacked li:first-child {
+    font-weight: normal;
+}
+
+.nav-stacked li a:hover,
+.nav-stacked li a:focus {
+    background-color: #2C3744;
+    border-radius: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-stacked span li {
+    background-color: #346145;
+    color: white;
+    font-weight: normal;
+    padding: 15px;
+    margin-top: 2px;
+}
+
+.nav-stacked span li a {
+    color: white;
+    margin-top: 2px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.nav-stacked span li a:hover {
+    background-color: #346145;
+    border-radius: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    box-sizing: border-box;
+    background-color: #C2CDDB;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #2C3744;
+    color: white;
+}
+
+.dropdown-menu {
+    width: 100%;
+    margin-top: 20px;
+    border: white;
+}
+
+.dropdown-menu > li {
+    background-color: #C2CDDB;
+    color: #2C3744;
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 2px;
+    padding: 10px;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+    background-color: #2C3744;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+#col1row3 .btn {
+    box-sizing: border-box;
+    background-color: #C2CDDB;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 100%;
+    height: 75px;
+    border-radius: 1;
+}
+
+
+
+#col1row2,
+#col1row3,
+#col1row4 {
+    background-color: white;
+    color: #2C3744;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/*Kontakt*/
+
+#kontakt p {
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 10px;
+}
+
+#col1row3 p > span {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#col1row3 a {
+    color: #346145;
+}
+
+#col1row3 p {
+    font-size: 11px;
+    background-color: #E5E5E5;
+    padding: 15px;
+
+}
+
+/*Map*/
+#col1row4 {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+#col2 > span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#col2 a {
+    font-family: Roboto;
+}
+
+#col2 p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#col2row1 {
+    background-color: white;
+    color: #2C3744;
+    padding: 0px 15px 0px 15px;
+    font-size: 14px;
+    font-family: RobotoSlab;
+}
+
+#col2row1 a {
+    color: #346145;
+    font-family: Roboto;
+}
+
+#col2row1 span a {
+    font-family: Roboto;
+    color: #337ab7;
+}
+
+#col2row2 {
+    background-color: white;
+    font-size: 15px;
+    border: solid 1px white;
+    margin: 5px;
+}
+
+#col2row2 h3 {
+    font-family: RobotoSlab;
+    font-size: 25px;
+    color: #2C3744;
+}
+
+#col2row2 h4 {
+    font-family: RobotoSlab;
+    font-size: 15px;
+    color: #2C3744;
+    margin-bottom: 5px;
+}
+
+#col2row2 p {
+    margin-top: 5px;
+}
+
+#col2row2 a {
+    font-family: Roboto;
+}
+
+#col2row2col2,
+#col2row2col1 {
+    color: #2C3744;
+    background-color: white;
+    border-top: solid 10px #2C3744;
+}
+
+#col2row1col2,
+#col2row1col1 {
+    color: #2C3744;
+    background-color: white;
+    border-top: solid 10px #2C3744;
+}
+
+#col2row2col2 h3,
+#col2row2col1 h3 {
+    font-weight: bold;
+}
+
+#col2row2col2 a,
+#col2row2col1 a {
+    text-decoration: none;
+    color: #2C3744;
+}
+
+#col2row2col2 a:hover,
+#col2row2col1 a:hover {
+    color: #527056;
+}
+
+
+
+.panel-footer {
+    margin-top: 300px;
+    background-color: white;
+    color: #2C3744;
+    border-top: 0;
+}
+
+.panel-footer .container {
+    background-color: white;
+    color: #2C3744;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 11px;
+}
+
+.panel-footer .container a {
+    color: #2C3744;
+}
+
+
+.colorbox {
+    padding: 0px;
+    font-size: 14px;
+    color: #2C3744;
+    margin-bottom: 15px;
+}
+
+.colorbox img {
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+#profil {
+    margin-bottom: 15px;
+    padding-top: 5px;
+    background-color: #F6F6F6;
+}
+
+
+#textbox {
+    padding: 0;
+    color: #2C3744;
+    font-size: 14px;
+}
+
+#textbox a {
+    color: #2C3744;
+    font-family: RobotoSlab;
+}
+
+/*****************************************/
+
+
+
+/*MEDIA-QUERIES*/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+    /*Brand*/
+    .navbar-brand span {
+        font-size: 1.8em;
+        line-height: 2em;
+    }
+
+    .container .jumbotron {
+        background: url('../img/jumbo1140.png') no-repeat;
+        height: 402px;
+        background-position: center;
+    }
+
+    #col1 {
+        width: 50%;
+        height: 100vh;
+    }
+
+    #col1row2,
+    #col1row3,
+    #col1row4 {
+        margin-bottom: 15px;
+    }
+
+    #col2 {
+        width: 150%;
+        margin-left: -50%;
+        height: 100vh;
+    }
+
+    #profil {
+        height: 140px;
+        border-right: 5px solid white;
+    }
+
+
+    #textbox {
+        margin-left: -35px;
+    }
+
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*Brand*/
+    .navbar-brand span {
+        font-size: 1.6em;
+        line-height: 2em;
+    }
+
+    /*Jumbotron*/
+    .container .jumbotron {
+        background: url('../img/jumbo940.png') no-repeat;
+        height: 331px;
+        background-position: center;
+    }
+
+
+    /*Tiles*/
+    #col1 {
+        width: 40%;
+        height: 100vh;
+    }
+
+    #col1row2,
+    #col1row3,
+    #col1row4 {
+        margin-bottom: 15px;
+    }
+
+    #col2 {
+        width: 160%;
+        margin-left: -60%;
+        height: 100vh;
+    }
+
+    #profil {
+        height: 140px;
+        border-right: 5px solid white;
+
+    }
+
+    #textbox {
+        margin-left: -20px;
+    }
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*Brand*/
+    .navbar-brand span {
+        font-size: 1.6em;
+        line-height: 1.4em;
+    }
+
+
+    /*Jumbotron*/
+    .container .jumbotron {
+        background: url('../img/jumbo740.png') no-repeat;
+        height: 261px;
+        background-position: center;
+        margin-bottom: 0px;
+    }
+
+
+    /*Welcome-Page -Text */
+    #col2row1 {
+        margin-top: 15px;
+    }
+
+
+    #titel {
+        margin-bottom: 0px;
+        font-size: 24px;
+    }
+
+    #col1row3,
+    #col1row4 {
+        margin-right: 5px;
+        margin-top: 15px;
+        height: 250px;
+    }
+
+    #col1row4 {
+        margin-right: -15px;
+    }
+
+
+    #profil {
+        height: 140px;
+        border-right: 5px solid white;
+    }
+
+
+    #textbox {
+        margin-left: -20px;
+    }
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+    /*Brand*/
+    .navbar-brand span {
+        font-size: 1.4em;
+        line-height: 1.4em;
+    }
+
+    /*Tiles*/
+    #col1row2,
+    #col1row3,
+    #col1row4 {
+        border: none;
+    }
+
+    #col1row3 {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    #col1row3 .btn {
+        border: 1px solid #2C3744;
+    }
+
+    #col1row3 .btn {
+        height: 40px;
+        background-color: white;
+    }
+
+    #col1row3 .btn:hover,
+    #col1row3 .btn:focus {
+        background-color: #C2CDDB;
+        border: none;
+    }
+
+    #col1row3 p {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #2C3744;
+        color: white;
+    }
+
+    #col1row3 p a {
+        color: white;
+        text-decoration-style: underline;
+    }
+
+    #col2row1 {
+        padding: 15px 15px 15px 15px;
+        font-size: 14px;
+    }
+
+    /*Mitarbeiter*/
+    #textbox {
+        text-align: center;
+    }
+
+    #textbox2 {
+        text-align: left;
+    }
+
+    #textbox2 a {
+        color: #2C3744;
+        font-family: RobotoSlab;
+    }
+
+    .colorbox {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*Farben
+	#C2CDDB;
+	#e2e7ee;
+	#527056; grün
+	*/

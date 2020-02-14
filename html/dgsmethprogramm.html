@@ -1,0 +1,936 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body>
+  <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="../cssn/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../cssn/styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css"/>
+
+
+<title>Graphical Causal Models</title>
+
+
+<style type="text/css">
+ 
+</style>
+
+<div style="font-family: Roboto; padding-top: 20px; padding-left:40px">
+
+
+
+<div id="content">
+<h2 class="title">Graphical Causal Models</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="left">
+
+<col class="left">
+</colgroup>
+<tbody>
+<tr>
+<td class="left">Datum</td>
+<td class="left">6. März 2020, 14:00&#x2013;18:00</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">7. März 2020,  9:00&#x2013;12:30</td>
+</tr>
+
+<tr>
+<td class="left">Ort</td>
+<td class="left">Universität Potsdam</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Campus Griebnitzsee</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">August-Bebel-Straße 89</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">14482 Potsdam</td>
+</tr>
+
+<tr>
+<td class="left">Raum</td>
+<td class="left">Gebäude 6</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Raum S21</td>
+</tr>
+
+<tr>
+<td class="left">Workshop</td>
+<td class="left">6. März 2020, 12:00&#x2013;14:00</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Universität Potsdam</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Campus Griebnitzsee</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Gebäude 6</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Raum S21</td>
+</tr>
+
+<tr>
+<td class="left">Anmeldung</td>
+<td class="left">bis 24.2.2020 auf</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left"><a href="https://terminplaner4.dfn.de/C6UtOk2q6F1Lcbg9" rel="noopener" target="_blank">https://terminplaner4.dfn.de/C6UtOk2q6F1Lcbg9</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Die Sektion <a href="https://dgs-methoden.uni-konstanz.de/" target="_blank">Methoden der empirischen Sozialforschung</a> der <a href="https://soziologie.de/aktuel" rel="noopener" target="_blank">Deutschen
+Gesellschaft für Soziolgie</a> läd alle Kolleginnen und Kollegen aus der
+Soziolgie und den angrenzenden Fächern zu ihrer Frühjahrstagung zum
+Thema
+</p>
+
+<div class="center">
+<p>
+<b>Graphical Causal Models</b>
+</p>
+</div>
+
+<p>
+ein. Aus Anlass der Frühjahrstagung veranstaltet das 
+[[<a href="https://www.uni-potsdam.de/pcqr" target="_blank">https://www.uni-potsdam.de/pcqr]Potsdam</a> Center for Quantiative Research]] gemeinsam mit der Methodensektion den
+einführenden Workshop
+</p>
+
+<div class="center">
+<p>
+<b>Causal Graphs Basics</b>
+</p>
+</div>
+
+<p>
+von <a href="https://www.polver.uni-konstanz.de/cdm/people/students/schuessler/" target="_blank">Julian Schüssler</a> (Universität Konstanz). Eine genauere
+Beschreibung des Workshops finden Sie am Ende der Kurzzusammenfassungen.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h3 id="sec-1">Freitag 6. März 2020</h3>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Workshop</h3>
+<div class="outline-text-3" id="text-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="left">
+
+<col class="left">
+</colgroup>
+<tbody>
+<tr>
+<td class="left">12:00&#x2013;14:00</td>
+<td class="left">Causal Graphs Basics</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Workshop</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">von Julian Schüssler</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h4 id="sec-1-2">Tagung</h4>
+<div class="outline-text-3" id="text-1-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="left">
+
+<col class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">13:30 &#x2013;14:00</th>
+<th scope="col" class="left">Registrierung  (<i>Kaffee</i>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">14:00&#x2013;14:10</td>
+<td class="left">Willkommen</td>
+</tr>
+
+<tr>
+<td class="left">14:10&#x2013;14:50</td>
+<td class="left">Kausale Mediationsanalyse mit Directed Acyclic Graphs*</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Michael Kühhirt</td>
+</tr>
+
+<tr>
+<td class="left">14:50&#x2013;15:30</td>
+<td class="left">Does positive affect mediate the effect of multimorbidity on depression?</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Ibrahim Demirer</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">15:30&#x2013;16:00</td>
+<td class="left"><i>Kaffee, Kuchen</i></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">16:00&#x2013;16:40</td>
+<td class="left">Defining and Identifying Discrimination Using DAGs*</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Sebastian Wenz</td>
+</tr>
+
+<tr>
+<td class="left">16:40&#x2013;17:20</td>
+<td class="left">Bringing Research Design Back In*</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Fabian Class/Ulrich Kohler/Tim Sawert</td>
+</tr>
+
+<tr>
+<td class="left">17:20-18:00</td>
+<td class="left">The Art of Programming Questionnaires*</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Claudia Saalbach</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">18:00&#x2013;20:00</td>
+<td class="left">Mitgliederversammlung</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">20:00</td>
+<td class="left">Gemeinsames Abendessen</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h3 id="sec-2">Samstag 7. März 2020</h3>
+<div class="outline-text-2" id="text-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="left">
+
+<col class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">9:00&#x2013;10:00</th>
+<th scope="col" class="left">External Validity and Transportability*</th>
+</tr>
+
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">Julian Schüssler</th>
+</tr>
+
+<tr>
+<th scope="col" class="left">10:00&#x2013;10:40</th>
+<th scope="col" class="left">Multilevel Analysis with Few Clusters*</th>
+</tr>
+
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">Jan Paul Heisig</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">10:40&#x2013;11:10</td>
+<td class="left"><i>Kaffee, Gebäck</i></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">11:10&#x2013;11:50</td>
+<td class="left">Graph Theory and Macroeconomic Regimes</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Miguel Carrión Álvarez/Dirk Ehnts</td>
+</tr>
+
+<tr>
+<td class="left">11:50&#x2013;12:30</td>
+<td class="left">Analyse ökonomischer Selektivität im politischen Engagement unter Anwendung von RMC und DAGs</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Juliana Witkowski/Simon Ress</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">12:30</td>
+<td class="left">Ende der Tagung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3" class="outline-2">
+<h3 id="sec-3">Anmeldung</h3>
+<div class="outline-text-2" id="text-3">
+<p>
+Um Anmeldung unter <a href="https://terminplaner4.dfn.de/C6UtOk2q6F1Lcbg9" rel="noopener" target="_blank">https://terminplaner4.dfn.de/C6UtOk2q6F1Lcbg9</a>
+wird gebeten. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h3 id="sec-4">Anreise</h3>
+<div class="outline-text-2" id="text-4">
+<p>
+Der Campus Griebnitzsee der Universität Potsdam liegt unmittelbar am
+S- und Regionalbahnhof Griebnitzsee. Der Bahnhof ist im
+10-Mintuten-Takt mit der S-Bahn-Linie 7 von Potsdam-Hauptbahnhof
+bzw. Berlin-City (Charlottenburg, Savigny-Platz, Zoologischer Garten,
+Hauptbahnhof, Friedrichstraße, etc.) sowie mit der Regionalbahn RB 21
+zu erreichen.
+</p>
+
+<p>
+Der Bahnhof Griebnitzsee gehört zum Berliner Tarifbereich C. Bei
+Anfahrt aus Berlin ist ein Ticket für <i>ABC</i> zu
+lösen. DB-City-Fahrscheine für Berlin haben keine Gültigkeit.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.bvg.de/de/Willkommen" rel="noopener" target="_blank">Fahrinfo der BVG</a>
+</li>
+<li><a href="https://www.openstreetmap.de/karte.html?zoom=17&lat=52.39332&lon=13.12927&layers=B000TF" rel="noopener" target="_blank">OSM-Karte</a>
+</li>
+<li><a href="https://www.uni-potsdam.de/db/zeik-portal/gm/lageplan-up.php?komplex=3" rel="noopener" target="_blank">Lageplan Campus Griebnitzsee</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h3 id="sec-5">Unterkünfte</h3>
+<div class="outline-text-2" id="text-5">
+<p>
+Die Teilnehmer werden gebeten, sich selbst um Unterkünfte zu
+bemühen. Neben dem unmittelbar in der Nachbarschaft des
+Universitätscampus gelegenen Seminaris Avendi Hotels (s.u.) bieten
+sich Hotels in der Umgebung von S-Bahnhöfen entlang der S7
+an. Nachfolgend einige Vorschläge (Fahrtzeit in Klammern)
+</p>
+
+<ul class="org-ul">
+<li>Fußläufig
+
+<ul class="org-ul">
+<li><a href="https://www.seminaris.de/hotels/potsdam/seminaris-avendi-hotel-potsdam" rel="noopener" target="_blank">Seminaris Avendi Hotel Potsdam</a>
+</li>
+</ul>
+</li>
+
+<li>Bereich Potsdam Hbf. (6 min)
+
+<ul class="org-ul">
+<li><a href="https://www.mercure-potsdam.com/" rel="noopener" target="_blank">Mercure Hotel Potsdam City</a>
+</li>
+</ul>
+</li>
+
+<li>S-Bahn Charlottenburg (20 min)
+
+<ul class="org-ul">
+<li><a href="https://www.charlottenburger-hof.de/" rel="noopener" target="_blank">ART-Hotel Charlottenburger Hof </a>
+</li>
+<li><a href="https://www.happygoluckyhotel.com/" rel="noopener" target="_blank">HappyGoLucky Hotel</a>
+</li>
+<li><a href="https://www.city-pension.de/" rel="noopener" target="_blank">City Pension Berlin</a> 
+</li>
+</ul>
+</li>
+
+<li>S-Bahn Zoologischer Garten (24 min) 
+
+<ul class="org-ul">
+<li><a href="https://www.motel-one.com/de/hotels/berlin/hotel-berlin-upper-west/" rel="noopener" target="_blank">Hotel Motel One</a>
+</li>
+<li><a href="https://www.aletto.de/de/" rel="noopener" target="_blank">Aletto Hotel Kudamm</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h3 id="sec-6">Kurzzusammenfassungen</h3>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h4 id="sec-6-1">Kausale Mediationsanalyse mit Directed Acyclic Graphs</h4>
+<div class="outline-text-3" id="text-6-1">
+</div><div id="outline-container-sec-6-1-1" class="outline-4">
+<h5 id="sec-6-1-1">Referent</h5>
+<div class="outline-text-4" id="text-6-1-1">
+<ul class="org-ul">
+<li>Michael Kühhirt, Universität zu Köln, Institut für Soziologie und
+Sozialpsychologie
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6-1-2" class="outline-4">
+<h5 id="sec-6-1-2">Zusammenfassung</h5>
+<div class="outline-text-4" id="text-6-1-2">
+<p>
+Die Untersuchung von Kausalzusammenhängen geht häufig einher mit der
+Frage nach den diesen Zusammenhängen zugrundeliegenden Prozessen und
+Mechanismen. Ein zentraler Aspekt dieser Frage ist, ob und zu welchem
+Maße der Effekt einer Variablen über eine oder mehrere weitere
+Variablen (i.e., potentielle Mediatoren) vermittelt wird. In der
+Praxis wird diese Frage häufig anhand von Veränderungen in
+Regressionskoeffizienten nach zusätzlicher Kontrolle der potentiellen
+Mechanismen untersucht. Die neuere Literatur zu kausaler Inferenz
+zeigt jedoch, dass dieser Ansatz mit Annahmen behaftet ist, die in der
+angewandten Forschung nur selten thematisiert und damit auch häufig
+keiner Plausibilitätsprüfung unterzogen werden. Am Beispiel des
+Effekts der sozialen Herkunft auf den Arbeitsmarkterfolg nutzt dieser
+Beitrag Directed Acyclic Graphs und die kontrafaktische Definition
+direkter und indirekter Kausaleffekte, um die Bedingungen transparent
+zu machen, unter denen Mediationsanalyse valide Schlussfolgerungen
+über direkte und indirekte Effekte zulässt. Im Anschluss daran werden
+verschiedene neuere Methoden der Schätzung direkter und indirekter
+Effekte mit den traditionellen Verfahren der Differenz- und
+Produktmethode verglichen.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h4 id="sec-6-2">Does positive affect mediate the effect of multimorbidity on depression?</h4>
+<div class="outline-text-3" id="text-6-2">
+</div><div id="outline-container-sec-6-2-1" class="outline-4">
+<h5 id="sec-6-2-1">Referent</h5>
+<div class="outline-text-4" id="text-6-2-1">
+<ul class="org-ul">
+<li>Ibrahim Demirer, Institut für Medizinsoziologie, Versorgungsforschung und Rehabilitationswissenschaft
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2-2" class="outline-4">
+<h5 id="sec-6-2-2">Zusammenfassung</h5>
+<div class="outline-text-4" id="text-6-2-2">
+<p>
+Although the association between multimorbidity (MM) and depression
+(DP) is well established, the pathways through which MM increases the
+risk of DP are often left obscure. Consequently, the identified
+associations suffer from unobserved heterogeneity. Moreover, the
+association is described as bidirectional and heavily influenced by
+intermediate factors. According to Beck (2008), DP is rooted in the
+individuals' negative interpretations of experiences. A major
+determinant of this interpretation is positive affect (PA). Exposition
+to MM tends to influence PA negatively. Thus, PA is an intermediate
+factor on the pathway between MM and DP. Mediation analysis is a
+common practice for the inspection of intermediate factors. Yet, for
+causal analysis, non-parametrical assumptions are required, mostly
+defined as sequential ignorability (SI). Translating longitudinal
+mediational settings to graphical causal models (DAGs) shows that SI
+is often violated due to exposure-induced mediator-outcome
+confoundment. In addition, classical approaches fail in parametric
+accountment for this type of confounding.  As a solution, DAGs are
+derived that try to capture the longitudinal process between MM, PA
+and DP. The empirical testing is applied by marginal structural
+modelling. As a Database, the German Ageing Survey (DEAS) is utilized.
+</p>
+
+<p>
+Beck, AT (2008). The evolution of the cognitive model of depression
+and its neurobiological correlates. American Journal of Psychiatry
+165(8):969&#x2013;977.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3" class="outline-3">
+<h4 id="sec-6-3">Defining and Identifying Discrimination Using DAGs</h4>
+<div class="outline-text-3" id="text-6-3">
+</div><div id="outline-container-sec-6-3-1" class="outline-4">
+<h4 id="sec-6-3-1">Referent</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<ul class="org-ul">
+<li>Sebatian Wenz, GESIS &#x2013; Leibniz Institute for the Social Sciences.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3-2" class="outline-4">
+<h5 id="sec-6-3-2">Kurzzusammenfassung</h5>
+<div class="outline-text-4" id="text-6-3-2">
+<p>
+While some broader definitions virtually equate discrimination with
+unconditional inequality, some very narrow definitions limit
+discrimination to intentional treatment that harms individuals and
+results in inequality between groups.  My contribution is based on
+both the substantive literature on discrimination as causal effect and
+the methodological literature on causality and Directed Acyclic Graphs
+(DAGs) in particular. I show that DAGs can help in both defining
+discrimination as causal effect in a substantively meaningful and
+empirically useful way and &#x2013; once defined &#x2013; identifying
+discrimination using different research designs.  Insights from this
+endeavor include:
+</p>
+
+<ul class="org-ul">
+<li>Defining and identifying discrimination are intertwined processes.
+</li>
+<li>Virtually all &#x2013; substantive and methodological &#x2013; ideas that went
+into my definition and the corresponding DAGs are rather old (e.g.,
+Rubin 1986); DAGs alone didn't help.
+</li>
+<li>Discrimination is virtually indistinguishable from unconditional
+inequality if conceptualized as total causal effect (e.g., Blank et
+al. 2004) of characteristics that are assigned very early in life
+and, afterwards, immutable.
+</li>
+<li>Solutions that use direct effect conceptualizations of
+discrimination (e.g., Pearl 2001, 2014) are themselves problematic;
+their substantive meaning changes when mediators are changed or
+added.
+</li>
+<li>Ethnic discrimination and social class discrimination are typically
+confounded in all research designs unless explicitly addressed.
+</li>
+<li>Depending on the definition, identifying discrimination becomes
+harder or easier using different research designs.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-4" class="outline-3">
+<h4 id="sec-6-4">Bringing Research Desing Back In</h4>
+<div class="outline-text-3" id="text-6-4">
+</div><div id="outline-container-sec-6-4-1" class="outline-4">
+<h4 id="sec-6-4-1">Referent</h4>
+<div class="outline-text-4" id="text-6-4-1">
+<ul class="org-ul">
+<li>Fabian Class, Universität Potsdam, PCQR
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6-4-2" class="outline-4">
+<h5 id="sec-6-4-2">Kurzzusammenfassung</h5>
+<div class="outline-text-4" id="text-6-4-2">
+<p>
+The choice of variables that are adjusted for in a statistical
+analysis is the single most important aspect in x-centered research
+designs. The choice of this "`adjustment set"' first and foremost
+depends the parameter of interest itself. It is thus impossible to
+make an informed choice without clearly defining the parameter of
+interest. Secondly, the choice of the adjustment set depends on
+assumptions about the causal relations between the covariates (as
+opposed to the associations between the covariates and the outcome).
+These assumptions should be thus made standout. Thirdly, the choice of
+the adjustment set depend on the covariate of interest. It is thus
+usually not sensible to interpret more than one coefficient in a
+statistical model.
+</p>
+
+<p>
+ A review of all x-centered research papers published in the European
+Sociological Review in 2016 and 2017 (N = 118) shows that the vast
+majority of papers use insufficient reasoning for the adjustment
+set. Particularly, only a minority of papers clearly define the
+parameter of interest and disclose their assumptions about the causal
+relations between the covariates.  In consequence, a huge number of
+papers interpret several coefficients of their models as if they had
+the same meaning. We conclude that parts of the ritualized research
+design in sociological papers can be described as an immunization
+strategy.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-5" class="outline-3">
+<h4 id="sec-6-5">The Art of Programming Questionnaires: Zur Umsetzung von Gestaltungsprinzipien für Fragebögen mit surveyAMC</h4>
+<div class="outline-text-3" id="text-6-5">
+</div><div id="outline-container-sec-6-5-1" class="outline-4">
+<h5 id="sec-6-5-1">Referentin</h5>
+<div class="outline-text-4" id="text-6-5-1">
+<ul class="org-ul">
+<li>Claudia Saalbach, Universität Potsdam, PCQR
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-5-2" class="outline-4">
+<h5 id="sec-6-5-2">Zusammenfassung</h5>
+<div class="outline-text-4" id="text-6-5-2">
+<p>
+Der Vortrag stellt das Programmpaket SurveyAMC vor, mit dem sich
+selbst-administrierte, papierbasierte, maschinenlesbare Fragebögen in
+hoher typografischer Qualität nach den wissenschaftlichen Standards
+der Fragebogengestaltung (Jenkins &amp; Dillman, 1995) erstellen
+lassen. Zudem enthält SurveyAMC Begleitprogramme mit Hilfe derer
+sowohl Papier- als auch Online Fragebögen, Codebücher und Dateien zur
+Beschriftungvon Datensätzen, Ergebnistabellen und -grafiken
+automatisch aus der gleichen Quelldatei generiert werden können. Der
+Vortrag zeigt, warum ein hochwertiges visuelles Fragebogendesign für
+die Qualität von selbst-administrierten Umfragedaten wichtig ist, wie
+dieses mit surveyAMC umgesetzt wird und welche Vorteile die Arbeit mit
+einer zentralen Quelldatei haben kann.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6-6" class="outline-3">
+<h4 id="sec-6-6">Graphical Causal Models for Survey Inference, External Validity, and Transportability</h4>
+<div class="outline-text-3" id="text-6-6">
+</div><div id="outline-container-sec-6-6-1" class="outline-4">
+<h5 id="sec-6-6-1">Referent</h5>
+<div class="outline-text-4" id="text-6-6-1">
+<ul class="org-ul">
+<li>Julian Schüssler, Universität Konstanz
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6-6-2" class="outline-4">
+<h5 id="sec-6-6-2">Zusammenfassung</h5>
+<div class="outline-text-4" id="text-6-6-2">
+<p>
+We demonstrate the usefulness of graphical causal models to
+communicate theoretical assumptions about the collection of survey
+data, determine whether typical population parameters of interest to
+survey researchers can be recovered from a survey sample, and support
+the choice of suitable adjustment strategies. Starting from graphical
+representations of prototypical selection scenarios, we provide an
+explicit justification for the use of standard weighted regression
+estimators, which is missing in the literature. We then further
+discuss the semantics of selection bias versus transportability
+problems, summarize the recent methodological literature, and discuss
+areas for future social science research that can benefit from recent
+advances in graph literature in computer science and epidemiology.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-7" class="outline-3">
+<h4 id="sec-6-7">Multilevel Analysis with Few Clusters: Improving Likelihood-based Methods to Provide Unbiased Estimates and Accurate Inference |</h4>
+<div class="outline-text-3" id="text-6-7">
+</div><div id="outline-container-sec-6-7-1" class="outline-4">
+<h5 id="sec-6-7-1">Referent</h5>
+<div class="outline-text-4" id="text-6-7-1">
+<ul class="org-ul">
+<li>Jan Paul Heisig, Wissenschaftszentrum Berlin für Sozialforschung (WZB)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-7-2" class="outline-4">
+<h5 id="sec-6-7-2">Zusammenfassung</h5>
+<div class="outline-text-4" id="text-6-7-2">
+<p>
+Quantitative comparative social scientists have long worried about the
+performance of multilevel models when the number of upper-level units
+is small. Adding to these concerns, an influential Monte Carlo study
+by Stegmueller (2013) suggests that standard maximum likelihood
+methods yield biased point estimates and severely anti-conservative
+inference with few upper-level units. In this paper, we seek to
+rectify this negative assessment. First, we show that maximum
+likelihood estimators of coefficients are unbiased in linear
+multilevel models. The apparent bias in coefficient estimates found by
+Stegmueller can be attributed to Monte Carlo Error and a flaw in the
+design of his simulation study. Second, we show how inferential
+problems can be overcome by using restricted maximum likelihood
+estimators for variance parameters and a t-distribution with
+appropriate degrees of freedom for statistical inference. Thus,
+accurate multilevel analysis is possible within the framework that
+most practitioners are familiar with, even if there are only a few
+upper-level units
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6-8" class="outline-3">
+<h4 id="sec-6-8">The Roads Not Taken: Graph Theory and Macroeconomic Regimes in Stock-flow Consistent Modeling</h4>
+<div class="outline-text-3" id="text-6-8">
+</div><div id="outline-container-sec-6-8-1" class="outline-4">
+<h5 id="sec-6-8-1">Referenten</h5>
+<div class="outline-text-4" id="text-6-8-1">
+<ul class="org-ul">
+<li>Miguel Carrión Álvarez, Grupo Santander
+</li>
+<li>Dirk Ehnts, Bard College Berlin 
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-6-8-2" class="outline-4">
+<h5 id="sec-6-8-2">Zusammenfassung</h5>
+<div class="outline-text-4" id="text-6-8-2">
+<p>
+Standard presentations of stock-flow consistent modeling use specific
+Post Keynesian closures, even though a given stock-flow accounting
+structure supports various different economic dynamics. In this paper
+we separate the dynamic closure from the accounting constraints and
+cast the latter in the language of graph theory. The graph formulation
+provides (1) a representation of an economy as a collection of cash
+flows on a network and (2) a collection of algebraic techniques to
+identify independent versus dependent cash-flow variables and solve
+the accounting constraints. The separation into independent and
+dependent variables is not unique, and we argue that each such
+separation can be interpreted as an institutional structure or policy
+regime.  Questions about macroeconomic regime change can thus be
+addressed within this framework.  We illustrate the graph tools
+through application of the simple stock-flow consistent model, or “SIM
+model,” found in Godley and Lavoie (2007). In this model there are
+eight different possible dynamic closures of the same underlying
+accounting structure. We classify the possible closures and discuss
+three of them in detail: the “standard” Godley–Lavoie closure, where
+government spending is the key policy lever; an “austerity” regime,
+where government spending adjusts to taxes that depend on private
+sector decisions; and a “colonial” regime, which is driven by
+taxation.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6-9" class="outline-3">
+<h4 id="sec-6-9">Ökonomische Selektivität im politischen Engagement</h4>
+<div class="outline-text-3" id="text-6-9">
+</div><div id="outline-container-sec-6-9-1" class="outline-4">
+<h5 id="sec-6-9-1">Referenten</h5>
+<div class="outline-text-4" id="text-6-9-1">
+<ul class="org-ul">
+<li>Juliana Witkowski, Ruhr-Universität Bochum, Fakultät für
+</li>
+</ul>
+<p>
+Sozialwissenschaft, Sektion sozialwissenschaftliche Methoden und Statistik, 
+</p>
+<ul class="org-ul">
+<li>Simon Ress, Ruhr-Universität Bochum, Fakultät für
+</li>
+</ul>
+<p>
+Sozialwissenschaft, Sektion sozialwissenschaftliche Methoden und Statistik, 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-6-9-2" class="outline-4">
+<h5 id="sec-6-9-2">Zusammenfassung</h5>
+<div class="outline-text-4" id="text-6-9-2">
+<p>
+In dem geplanten Vortrag werden die Analysemethode und -ergebnisse des
+Einflusses ökonomischer Faktoren auf die Bereitschaft, zum politischen
+Engagement, vorgestellt. Mit bürgerschaftlichem Engagement im
+Allgemeinen, zu dem auch politische Partizipation zählt, wird die
+Hoffnung verbunden, verschiedene gesellschaftliche Gruppen zu
+integrieren. Studien wiesen in der Vergangenheit darauf hin, dass sich
+die Partizipation in der Zivilgesellschaft zwar im Durchschnitt erhöht
+hat, bestimmte Formen jedoch rückläufig sind und sich auf bestimmte
+soziale Gruppen konzentrieren (Tesch-Römer et al. 2017; Bödeker
+2012). Insbesondere im Bereich von politischem Engagement ist zu
+berücksichtigen, dass neben der sozialen Integration auch die
+Repräsentation einer breiten Masse der Bevölkerung in der Politik
+leidet, wenn einige soziale Gruppen unterproportional vertreten sind.
+Anhand der Daten des SOEPs wird geschätzt, wie das Einkommen auf die
+Bereitschaft und das Ausmaß, sich in Bürgerinitiativen, politischen
+Organisationen oder auf Ebene der Kommunalpolitik zu engagieren,
+wirkt.  Dabei wird sowohl temporale als auch gruppenspezifische
+Heterogenität des Effekts zugelassen. Mit Hilfe von Directed Acycling
+Graphs wird gemäß des Potential Outcome Models (Rubin 2005) eine
+geeignete Auswahl von Confounder-Variablen aus dem bisherigen
+Forschungsstand abgeleitet, sodass Gültigkeit der Conditional
+Independence Assumption angenommen und ein kausaler Effekt geschätzt
+werden kann. Modelliert wird die Schätzung mittels
+Difference-in-Differences Propensity Score Matching.
+</p>
+
+<p>
+Bödeker, Sebastian (2012). Das uneingelöste Versprechen der Demokratie. Zum Verhältnis
+von sozialer Ungleichheit und politischer Partizipation in der repräsentativen Demokratie. in:
+Vorgänge. Zeitschrift für Bürgerrechte und Gesellschaftspolitik, 51(3)43-52.
+</p>
+
+<p>
+Rubin, Donald B. (2005). Causal Inference Using Potential Outcomes. Design, Modeling,
+Decisions. Journal of the American Statistical Association, (469)
+</p>
+
+<p>
+Tesch-Römer, Clemens; Simonson, Julia; Vogel, Claudia; Ziegelmann,
+Jochen P.  (2017). Ergebnisse des Deutschen Freiwilligensurveys 2014:
+Implikationen für die Engagementpolitik, in: Simonson, Julia; Vogel,
+Claudia; Tesch-Römer, Clemens (Hrsg.), Freiwilliges Engagement in
+Deutschland. Empirische Studien zum bürgerschaftlichen Engagement.
+Wiesbaden: Springer.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-7" class="outline-2">
+<h3 id="sec-7">Workshop: Causal Graphs Basics</h3>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1">Ort und Zeit</h3>
+<div class="outline-text-3" id="text-7-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="left">
+</colgroup>
+<tbody>
+<tr>
+<td class="left">6. März 2020, 12:00&#x2013;14:00</td>
+</tr>
+
+<tr>
+<td class="left">Universität Potsdam</td>
+</tr>
+
+<tr>
+<td class="left">Campus Griebnitzsee</td>
+</tr>
+
+<tr>
+<td class="left">Gebäude 6</td>
+</tr>
+
+<tr>
+<td class="left">Raum S21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-sec-7-2" class="outline-3">
+<h4 id="sec-7-2">Beschreibung</h4>
+<div class="outline-text-3" id="text-7-2">
+<p>
+The workshop discusses causal graphs as a fundamental modelling
+framework for empirical researchers in the social sciences. Questions
+addressed in interaction with participants include drawing and
+interpreting a graph, the connection to path diagrams and structural
+equations, understanding <i>d</i>-separation (with an application to
+instrumental variables), the nature of post-treatment bias, and
+simulating data from graphs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-3" class="outline-3">
+<h4 id="sec-7-3">Referent</h4>
+<div class="outline-text-3" id="text-7-3">
+<p>
+Julian Schüssler ist PhD Student an der <a href="https://www.gsds.uni-konstanz.de/" rel="noopener" target="_blank">Graduate School of Decision
+Sciences</a> und Mitglied im <a href="https://www.polver.uni-konstanz.de/en/cdm/" rel="noopener" target="_blank">Center for Data and Methods</a> der Universität
+Konstanz. Seine Dissertation befasst sich mit neuen Anwendungen von
+kausalen Graphen und <i>potential outcomes</i> auf Instrumentalvariablen,
+Surveyforschung und kausalen Mechanismen.
+</p>
+
+<p>
+Julian Schüsslers Seminar zu <a href="https://www.julianschuessler.net/graphs2018.html" rel="noopener" target="_blank">Causal Graphs</a> erhielt den <i>Causality in
+Statistics Education Award 2018</i> der American Statistical
+Association. 
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="https://www.validator.w3.org/check?uri=referer" rel="noopener" target="_blank">Validate</a></p>
+</div>
+
+
+</body></html>

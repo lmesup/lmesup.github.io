@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de" style="display: none;">
+
+<head>
+
+    <title>Template</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://lmesup.github.io/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+
+    <link href="https://lmesup.github.io/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://lmesup.github.io/css/styles.css" rel="stylesheet" />
+
+    <!-- CSS ENDE -->
+
+
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Snippet" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500|Roboto:400,500&display=swap" rel="stylesheet">
+
+    <!-- FONTS ENDE -->
+
+</head>
+
+
+<body>
+
+    <span id="struktur_navbar"></span>
+
+    <div class="container" id="main">
+        <!--main-->
+
+        <!-- <div class="jumbotron visible-lg visible-md visible-sm"></div> -->
+        <div style="height: 40px;"></div>
+        <!--vspace-->
+
+        <div class="row" id="tiles">
+
+            <span id="struktur_menu"></span>
+
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <!--col2-->
+                <div class="col2">
+                    <!--col2-->
+
+
+                    <!-- ############################################ -->
+
+
+                    <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                        <!--col2row1-->
+
+                        <p>Ich bin Inhalt!</p>
+
+                    </div>
+
+
+                    <!-- ############################################ -->
+
+                </div>
+                <!--col2-->
+            </div>
+            <!--col2-->
+        </div>
+        <!--tiles-->
+
+        <span id="struktur_footer"></span>
+
+    </div>
+    <!--main-->
+
+
+    <script>
+        $(document).on("allReady", function() {
+            setTimeout(function() {
+                $('html').show();
+            }, 100);
+        });
+        $(document).ready(function() {
+            $("#struktur_navbar").load("https://lmesup.github.io/struktur/struktur_navbar.html");
+        });
+        $(document).ready(function() {
+            $("#struktur_menu").load("https://lmesup.github.io/struktur/struktur_menu.html");
+        });
+        $(document).ready(function() {
+            $("#struktur_footer").load("https://lmesup.github.io/struktur/struktur_footer.html");
+            $(document).trigger("allReady");
+        });
+
+    </script>
+
+
+</body>
+
+</html>
