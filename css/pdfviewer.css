@@ -36,6 +36,11 @@
     padding: 0.25em 0.5em;
 }
 
+#pager {
+    position: relative;
+    top: -0.1vw;
+}
+
 #viewport-container {
     flex: 1;
     background: #eee;
