@@ -10,7 +10,7 @@ Verwaltet durch Claudia Saalbach und Johannes Schütt
 <img src="https://www.uni-potsdam.de/typo3conf01/ext/up_template/Resources/Public/Images/logos/up_logo_university_2.png" width="90" />
 <br/>
 
-### Änderung einer Seite
+### Änderung von Inhalt
 
 Falls Sie den Inhalt einer Seite verändern möchten:
 
@@ -21,3 +21,5 @@ Falls Sie den Inhalt einer Seite verändern möchten:
 5. Überprüfen Sie Ihre Änderungen und senden Sie anschließend den Pull request 
    (kommentieren Sie den Request ggf. und geben Sie einen passenden Titel).
 6. Wir werden ihre vorgenommenen Änderungen prüfen und sie dann für das Repository übernehmen.
+
+Achten Sie darauf, dass Ihr geforktes Repository auf dem neusten Stand ist, bevor Sie Änderungen vornehmen.
