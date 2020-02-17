@@ -14,7 +14,7 @@ Verwaltet durch Claudia Saalbach und Johannes Schütt
 
 Falls Sie den Inhalt einer Seite verändern möchten:
 
-1. Erstellen Sie einen Github Account (falls Sie noch keinen besitzen).
+1. Erstellen Sie einen GitHub Account (falls Sie noch keinen besitzen).
 2. Forken Sie dieses Repository.
 3. Nehmen Sie die gewünschten Änderungen in dem geforkten Repository vor und speichern Sie die Änderungen ab.
 4. Erstellen Sie einen Pull request.
