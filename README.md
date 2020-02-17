@@ -18,5 +18,5 @@ Falls Sie den Inhalt einer Seite verändern möchten:
 2. Forken Sie dieses Repository.
 3. Nehmen Sie die gewünschten Änderungen in dem geforkten Repository vor und speichern Sie die Änderungen ab.
 4. Erstellen Sie einen Pull request.
-5. Überprüfen Sie Ihre Änderungen und senden Sie anschließend den Pull request.
+5. Überprüfen Sie Ihre Änderungen und senden Sie anschließend den Pull request (kommentieren Sie den Request ggf. und geben Sie einen passenden Titel).
 6. Wir werden ihre vorgenommenen Änderungen prüfen und sie dann für das Repository übernehmen.
