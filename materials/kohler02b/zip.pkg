@@ -1,0 +1,14 @@
+v 2
+d Analysen zu Kohler (2001) "Der demokratische Klassenkampf"
+d Dieses Paket {bf:do} umfasst alle  Do-Files in nicht komprimierter 
+d Form. Die Do-Files muessen nach dem Download mit einem Programm
+d zum Entpacken von Zip-Archiven entpackt werden.
+d
+d Eine knappe Beschreibung der Do-Files findet sich im Master-Do-File.
+d Dieser ist im Paket enthalten.
+d
+f do.zip
+
+
+
+

@@ -1,0 +1,29 @@
+v 2
+d Analysen zu Kohler (2002) "Der demokratische Klassenkampf"
+d Hier finden Sie alle Stata-Analyse-Do-Files zur Dissertation
+d von Ulrich Kohler.
+d
+d Die Paket {bf:part1} und {bf:part2} enthalten die Do-Files 
+d in nicht komprimierter Form. 
+d
+d Das Paket {bf:zip} umfasst die Do-Files in komprimierter 
+d Form.
+d
+d Das Paket {bf:gphprint} enthaelt einen Do-File zum Ausdruck der
+d Grafiken in EPS-Dateien. Die Grafiken werden wie bei Kohler (2002)
+d ausgedruckt.
+d 
+d Eine knappe Beschreibung der Do-Files findet sich im Master-Do-File.
+d Dieser ist im Paket {bf:part1} enthalten.
+d
+p part1 Do-Files, erster Teil
+p part2 Do-Files, zweiter Teil
+p zip  Zip-Archiv der Do-Files 
+p gphprint Do-File zum Ausdruck der Grafiken
+
+
+
+
+
+
+

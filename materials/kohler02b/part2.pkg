@@ -1,0 +1,72 @@
+v 3
+d Analysen zu Kohler (2002) "Der demokratische Klassenkampf"
+d Dieses Paket umfasst den zweiten Teil der Do-Files.
+d in nicht komprimierter Form. Sie benötigen zusätzlich auch
+d den ersten Teil.
+d
+d Eine knappe Beschreibung der Do-Files findet sich im Master-Do-File.
+d Dieser ist in Teil 1 des Paketes enthalten.
+d
+f grnormprob.do
+f crsimul.do
+f ansimul1.do
+f ansimul2.do
+f ansimul3.do
+f crmegp.do 
+f crstab1.do
+f anstab.do
+f anstabw.do
+f ansimul4.do
+f ansimul5.do
+f ansimul6.do
+f anstab1.do
+f anstab1w.do
+f anstab1a.do
+f anstab1aw.do
+f anstab2.do
+f anstab2w.do
+f anstab3.do
+f crstab2u.do
+f crstab2b.do
+f anstab4u.do
+f grstab4u.do
+f anstab4b.do
+f grstab4b.do
+f anstab5b.do
+f grstab5a.do
+f grstab5b.do
+f anstab6b.do
+f anstab6c.do
+f anstab6d.do
+f anstab6e.do
+f anstab6f.do
+f crtraeg1.do 
+f antraeg1.do
+f antraeg2.do
+f grtraeg3.do
+f antraeg1a.do
+f grtraeg3a.do
+f grtraeg4.do
+f grtraeg5.do
+f grtraeg6.do
+f antraeg6.do
+f crpidlv.do
+f anpidlv1.do
+f grpidlv1.do
+f grpidlv2.do
+f anpidlv2.do
+f anpidlv3.do
+f grpidlv3.do
+f anpidlv4.do
+f grpidlv4.do
+f grpidlv5.do
+f grpidlv6.do
+f grpidlv7.do
+f anpidlv5.do
+f grpidlv8.do
+f anpidlv6.do
+f anpidlv7.do
+f grpidlv9.do
+f grpidlv10.do
+f grpidlv11.do
+f grpidlv12.do

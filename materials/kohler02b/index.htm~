@@ -1,0 +1,248 @@
+<html>
+<header>
+	  Kohler (2002b): Der demokratische Klassenkampf
+</header>
+
+<body>
+<h1>
+  Downloadseite zum "demokratischen Klassenkampf"
+</h1>
+
+<p> Auf dieser Seite finden sich Materialien zu dem Buch: Ulrich
+ Kohler (2002): "Der demokratische Klassenkampf. Zum Zusammenhang von
+ Sozialstruktur und Parteipr&auml;ferenz" Frankfurt a. M. und New York:
+ Campus</p>
+
+<ul>
+<li> <a href="dissanhwww.pdf">Methodischer Anhang</a>
+<li> <a href="do.zip">Do-Files</a>
+</ul>
+
+<p> Mit den Do-Files k&ouml;nnen alle Analysen des Buches nachgerechnet
+werden.  Im Buch sind bei jeder Analyse die Namen der dazu ben&ouml;tigten
+Do-Files abgedruckt.  </p>
+
+<p> Mit Hilfe des <a href = "master.do">Master Do-Files</a> k&ouml;nnen
+<i>alle</i> vorgenommenen Analysen wiederholt werden. Hierzu m&uuml;ssen alle
+Do-Files heruntergeladen werden. Zum Downlaod eines Zip-Archivs aller
+Do-Files klicken Sie  <a href = "do.zip">hier</a>. </p>  
+
+<p> Alternativ kann das Zip-Archiv auch mit den Stata-Befehlen </p>
+
+
+<tt>
+. net from http://www.sowi.uni-mannheim.de/lehrstuehle/lesas/kohler02b
+<br>
+. net get do
+</tt>
+
+<p> heruntergeladen werden. </p>
+
+<p> Nachfolgend finden Sie eine kommentierte Liste der Stata
+Do-Files. Die Reihenfolge der Liste entspricht den Eintr&auml;gen im Master
+Do-File. Hinweise zur Verwendung des Master-Do-Files finden Sie in der
+Einleitung der Dissertation (Abschnitt 0.6, "Replizierbarkeit")</p>
+
+<p><b> Achtung: Zum Ablauf der Do-Files m&uuml;ssen einige Stata-Prozeduren
+nachinstalliert werden. Die Installation dieser Prozeduren kann mit
+Hilfe des Master Do-File automatisch erfolgen. Dies erfordert jedoch
+eine Verbindung zum Internet sowie die Stata-Version 6.0 oder h&ouml;her.
+</b></p>
+
+
+
+<tt>
+* +--------------------------------+ <br>
+* |Generierung zentraler Variablen | <br>
+* +--------------------------------+ <br>
+<br>
+ <a href="crstruk1.do"> crstruk1.do</a> Bundesland, Haushaltsstellung, Familienstand, Schulbildung,
+    Berufsausbildung, Bildungsdauer, Erwerbsstatus,
+    Nie Erwerbst"atig, In Ausbildung, Haushaltseinkommen <br>
+ <a href="creink.do"> creink.do</a>  Berufsbezogenes pers"onliches Bruttoeinkommen <br>
+ <a href="crstruk2.do"> crstruk2.do</a> Einordnungsberufe "Hauptverdiener", "Pappi" und "Terwey" <br>
+ <a href="creigen1.do"> creigen1.do</a> Datensatz zur Fehlerkorrektur <br>
+ <a href="aneigen1.do"> aneigen1.do</a> Fehlersuche 1: Nonmatchs korrekt? <br>
+ <a href="crkorr1.do"> crkorr1.do</a> Korrektur der Non-matchs aus aneigen1 <br>
+ <a href="creigen2.do"> creigen2.do</a> Datensatz zur Fehlerkorrektur (Kopie von creigen1)<br>
+ <a href="aneigen2.do"> aneigen2.do</a> Zur Kontrolle nochmal: Nonmatchs korrekt?
+     (Kopie von aneigen1) -> ok <br>
+ <a href="cregp.do"> cregp.do</a>  EGP -- Klassenschema <br>
+ <a href="creigen3.do"> creigen3.do</a> Datensatz zur Suche nach fehlerhaften Nonmatchs in EGP <br>
+ <a href="aneigen3.do"> aneigen3.do</a> Fehlersuche 2: Nonmatchs korrekt? und alle groesser -2 <br>
+ <a href="crkorr3.do"> crkorr3.do</a> Korrektur Non-matchs aus aneigen3.do <br>
+ <a href="creigen4.do"> creigen4.do</a> Datensatz zur Suche nach fehlerhaften Nonmatchs in EGP <br>
+ <a href="aneigen4.do"> aneigen4.do</a> Nochmal Fehlersuche 2 <br>
+ <a href="crkorr4.do"> crkorr4.do</a> Korrektur eines Fehler in  <a href="crkorr3.do"> crkorr3.do</a> <br>
+ <a href="creigen5.do"> creigen5.do</a> Datensatz zur Suche nach fehlerhaften Nonmatchs in EGP <br>
+ <a href="aneigen5.do"> aneigen5.do</a> Nochmal Fehlersuche 2 -> ok <br>
+<br>
+* +-------+ <br>
+* |Anhang | <br>
+* +-------+ <br>
+<br>
+ <a href="anegpvgl.do"> anegpvgl.do</a> Vergleich ALLBUS - SOEP Klassenschema <br>
+ <a href="crkorr5.do"> crkorr5.do</a> Label f&uuml;r bsth vergessen -> Korrektur <br>
+ <a href="cregpanh.do"> cregpanh.do</a> Long Data mit EGP, Einkommen, Prestige f&uuml;r Anhang <br>
+ <a href="anegpfre.do"> anegpfre.do</a> Verteilung EGP, -> egpfre.gph <br>
+ <a href="anegpfr2.do"> anegpfr2.do</a> Menge mit "halber" Information zugewiesene Klassen <br>
+ <a href="anegpfrx.do"> anegpfrx.do</a> -> anegpfre f&uuml;r Westen <br>
+ <a href="creta.do"> creta.do</a>  eta^2 Einkommen/Prestige -> EGP <br>
+ <a href="grholtm.do"> grholtm.do</a> Replikation eta^2 bei Holtman (1990) (Eink/Prestige) <br>
+ <a href="anegppre.do"> anegppre.do</a> Prestige der EGP--Klassen in ALLBUS und SOEP <br>
+ <a href="anegpein.do"> anegpein.do</a> Einkommen der EGP--Klassen in ALLBUS und SOEP <br>
+ <a href="anholtm1.do"> anholtm1.do</a> Warum h&ouml;heres Einkommen im SOEP? <br>
+ <a href="anholtm2.do"> anholtm2.do</a> Warum eta^2 im SOEP bei Einkommen niedrig?<br>
+ <a href="anlr.do"> anlr.do</a>  Politbarometer: Validit&auml;t rechts--links--Schema <br>
+ <a href="crrl.do"> crrl.do</a>  Erzeugung des Rechts--Links--Schemas <br>
+ <a href="anrl1.do"> anrl1.do</a> Fehlercheck 1 Rechts--Links--Schema -> all clear <br>
+ <a href="cregppat.do"> cregppat.do</a> Muster ISCO-BST-EGP fuer SOEP und ALLBUS <br>
+ <a href="anholtm3.do"> anholtm3.do</a> anholtm, jedoch Anwendung ALLBUS-EGP auf SOEP Daten <br>
+<br>
+ * Fehler durch Gewichtung beim Allbus: Gewichtungsvariable  <br>
+ * enth&auml;lt 99.999 f&uuml;r Personen, denen kein Gewicht zugewiesen werden  <br>
+ * kann. -> werden auf "." gesetzt. Analysen werden wiederholt  <br>
+ <br>
+ * Wiederholung vorhergehender Analysen <br>
+  <a href="anegpfr3.do"> anegpfr3.do</a> Verteilung EGP--Klassenschema (anegpfre) <br>
+  <a href="anegpfr4.do"> anegpfr4.do</a> Wie anegpfre, jedoch nur f&uuml;r Westen (anegpfrx) <br>
+ <a href = "creta2.do"> creta2.do</a>  <br>
+  <a href="grholtm4.do"> grholtm4.do</a> Replikation eta^2 bei Holtman (1990)(anholtm) <br>
+  <a href="anegppr1.do"> anegppr1.do</a> Prestige der EGP--Klassen in ALLBUS und SOEP (anegppre) <br>
+  <a href="anegpei1.do"> anegpei1.do</a> Einkommen der EGP--Klassen in ALLBUS und SOEP (anegpein) <br>
+ <a href="anegppid.do"> anegppid.do</a> PID der EGP--Klassen in Allbus und SOEP '90 <br>
+ <a href="crpid.do"> crpid.do</a>  PID fuer alle Wellen <br>
+ <a href="aneinord.do"> aneinord.do</a> Vergleich der Einordnungsberufe <br>
+ <a href="aneinor1.do"> aneinor1.do</a> Vergleich Einordnungsberufe, nur Westdeutsche <br>
+<br>
+* +----------+ <br>
+* |Kapitel 3 | <br>
+* +----------+ <br>
+ <br>
+ <a href="ancases.do"> ancases.do</a> Zentrale Fallzahlen im SOEP <br>
+ <a href="crweights.do"> crweights.do</a> Gewichtungsfaktoren fuer Laengschnitte 84-97 <br>
+ <br>
+* +----------+ <br>
+* |Kapitel 6 | <br>
+* +----------+ <br>
+
+ <a href="grxtreg1.do"> grxtreg1.do</a> Beispiel f&uuml;r Fixed--Effects--Regression <br>
+ <a href="grtpaths.do"> grtpaths.do</a> Erzeugt Graphik der Zeitpfade aus Allison 1994 <br>
+ <br>
+* +----------+ <br>
+* |Kapitel 1 | <br>
+* +----------+ <br>
+ <br>
+ <a href="grverbr.do"> grverbr.do</a> Verbrugge 1977 (-> verbr.gph) <br>
+ <br>
+* +-----------+ <br>
+* | Kapitel 4 | <br>
+* +-----------+ <br>
+ <br>
+ <a href="grnormprob.do"> grnormprob.do</a> Beschreibung der Verteilung von normbrob(z~(-1,1)) <br>
+ <a href="crsimul.do"> crsimul.do</a> Simuliert obj. Interessenlage -> PID <br>
+ <a href="ansimul1.do"> ansimul1.do</a> Beschreibung demokratischer Klassenkampf in simul.dta <br>
+ <a href="ansimul2.do"> ansimul2.do</a> Variante von ansimul1 mit anderer Anordnung der Grafiken <br>
+ <a href="ansimul3.do"> ansimul3.do</a> Variante von ansimul2, mit Min/Max statt p5/p95 <br>
+ <a href="crmegp.do"> crmegp.do</a>  Erzeugt EGP-Klassenschema, Variante Mueller fuer SOEP <br>
+ <a href="crstab1.do"> crstab1.do</a> PID, unbalanced, long, xtdata <br>
+ <a href="anstab.do"> anstab.do</a> Lag-1 Stability f&uuml;r unterschiedliche Settings <br>
+ <a href="anstabw.do"> anstabw.do</a> wie anstab, jedoch Gewichtet -> Problem: Fallzahl!! <br>
+ <a href="ansimul4.do"> ansimul4.do</a> Vergleich Simulation - SOEP - Daten <br>
+ <a href="ansimul5.do"> ansimul5.do</a> Vergleich Simulation - Allbus - Daten <br>
+ <a href="ansimul6.do"> ansimul6.do</a> Vergleich Simulation (Mittelwerte) - SOEP/ALLBUS <br>
+ <br>
+* +-----------+ <br>
+* | Kapitel 5 | <br>
+* +-----------+ <br>
+ <br>
+* Stabilit&auml;t <br>
+* ---------- <br>
+ <br>
+* Transformationstabellen <br>
+ <a href="anstab1.do"> anstab1.do</a> Lag-1 Trans.-Prob f&uuml;r unterschiedliche Settings <br>
+ <a href="anstab1w.do"> anstab1w.do</a> Lag-1 Trans.-Prob mit Gewichtung <br>
+ <a href="anstab1a.do"> anstab1a.do</a> Lag-1 Trans.-Prob m. Rekodierung "keine PID" <br> 
+ <a href="anstab1aw.do"> anstab1aw.do</a> Lag-1 Trans.-Prob m. Rekodierung "keine PID" mit Gewichtung <br> 
+ <a href="anstab2.do"> anstab2.do</a> Lag-X Stability <br>
+ <a href="anstab2w.do"> anstab2w.do</a> Lag-X Stability, Weighted <br>
+ <a href="anstab3.do"> anstab3.do</a> Within-Percent, unvollst&auml;ndig, nicht weiterverfolgt <br>
+ <br>
+* Sequenzanalysen <br>
+ <a href="crstab2u.do"> crstab2u.do</a> Datensatz PID unbalanced, wide <br>
+ <a href="crstab2b.do"> crstab2b.do</a> Datensatz PID balanced, wide <br>
+ <a href="anstab4u.do"> anstab4u.do</a> Sequenzen, Unbalanced Panel Design <br>
+ <a href="grstab4u.do"> grstab4u.do</a> 10 H&auml;ufigste Sequenzen, unbalanced <br>
+ <a href="anstab4b.do"> anstab4b.do</a> Sequenzen, Balanced Panel Design <br>
+ <a href="grstab4b.do"> grstab4b.do</a> 10 H&auml;ufigste Sequenzen, balanced <br>
+ <a href="anstab5b.do"> anstab5b.do</a> SO-Sequenzen, Balanced Panel Design <br>
+ <a href="grstab5a.do"> grstab5a.do</a> Anzahl der Stadien in den SO-Sequenzen <br>
+ <a href="grstab5b.do"> grstab5b.do</a> 10 H&auml;ufigste SO-Sequenzen, balanced <br>
+ <a href="anstab6b.do"> anstab6b.do</a> SS-Sequenzen, balanced <br> 
+ <a href="anstab6c.do"> anstab6c.do</a> Welche Sequenzen kommen nicht vor? <br>
+ <a href="anstab6d.do"> anstab6d.do</a> SS-Sequenzen unter Ausschluss von Sonst./k.A <br>
+ <a href="anstab6e.do"> anstab6e.do</a> anstab6c unter Ausschluss von Sonst./k.A. <br>
+ <a href="anstab6f.do"> anstab6f.do</a> SS-Sequenz-Typen mit Einschluss von Sonst./k.A <br>
+ <br>
+* Tr&auml;gheit <br>
+* -------- <br>
+ <br>
+ <a href="anstab2a.do"> anstab2a.do</a> Station&auml;res Markov-Modell 1. Ord. (nicht weiterverfolgt) <br>
+ <a href="anstab2b.do"> anstab2b.do</a> Station&auml;res Markov-Modell 2. Ord. (nicht weiterverfolgt) <br>
+ <a href="anstab2c.do"> anstab2c.do</a> Test der Zeit-Homogenit&auml;t (nicht weiterverfolgt) <br>
+ <a href="anstab2d.do"> anstab2d.do</a> Zeitvariierendes Markov-Modell (nicht weiterverfolgt) <br>
+ <br>
+ <a href="crtraeg1.do"> crtraeg1.do</a>  <br>
+ <a href="antraeg1.do"> antraeg1.do</a> Traegheit, Design 1+3, Lag-13 <br>
+ <a href="antraeg2.do"> antraeg2.do</a> Traegheit, Design 1+3, Lag-1 <br>
+ <a href="grtraeg3.do"> grtraeg3.do</a> Plots der Koeffizienten im Analysedesign 1 <br>
+ <a href="antraeg1a.do"> antraeg1a.do</a> Variante von antraeg1a - Lag-1 mit balanced Design <br>
+ <a href="grtraeg3a.do"> grtraeg3a.do</a> Plots mit Variante antraeg1a <br>
+ <a href="grtraeg4.do"> grtraeg4.do</a> Plots der Koeffizienten im Analysedesign 2 <br>
+ <a href="grtraeg5.do"> grtraeg5.do</a> Sind Arbeiter/Selbst&auml;ndigen-Kinder stabiler? <br>
+ <a href="grtraeg6.do"> grtraeg6.do</a> Variante von grtraeg5 <br>
+ <a href="antraeg6.do"> antraeg6.do</a> Kaplan Mayer zu: Sind Arbeiter-Kinder stabiler? <br> 
+ <br>
+* +-----------+ <br>
+* | Kapitel 6 | <br>
+* +-----------+ <br>
+ <br>
+ <a href="crpidlv.do"> crpidlv.do</a> Ereignisindikatoren, long, xtdata, weights & friends <br>
+ <a href="anpidlv1.do"> anpidlv1.do</a> Descr. Analysedaten: n, Teilnahmen, Beobachtungsdichte <br>
+ <a href="grpidlv1.do"> grpidlv1.do</a> Verteilung der Teilnahmen <br>
+ <a href="grpidlv2.do"> grpidlv2.do</a> Beobachtungszeiraeme <br>
+ <a href="anpidlv2.do"> anpidlv2.do</a> Verteilung unabhaengige Variablen <br>
+ <a href="anpidlv3.do"> anpidlv3.do</a> xtlogit - Modell 1, vollst. Information <br>
+ <a href="grpidlv3.do"> grpidlv3.do</a> Vergleich Fixed-Effects mit Between-Effects <br>
+ <a href="anpidlv4.do"> anpidlv4.do</a> xtlogit - Modell 2, unvollst. Information <br>
+ <a href="grpidlv4.do"> grpidlv4.do</a> Interaktionseffekte Klassenwechsel X Pol. Int. <br>
+ <a href="grpidlv5.do"> grpidlv5.do</a> Interaktionseffekte Aging Cons X Pol. Int. <br>
+ <a href="grpidlv6.do"> grpidlv6.do</a> Interaktionseffekte Arbeitslos X Pol. Int. <br>
+ <a href="grpidlv7.do"> grpidlv7.do</a> Interaktionseffekte Interaktionspartner X Pol. Int. <br>
+ <a href="anpidlv5.do"> anpidlv5.do</a> B90-Modell mit Aufnahme Studium (nicht weiterverfolgt) <br> 
+ <a href="grpidlv8.do"> grpidlv8.do</a> Ergebnisplot von anpidlv5 (nicht weiterverfolgt) <br>
+ <a href="anpidlv6.do"> anpidlv6.do</a> Zeitversetzt - Dummy-Kodierung (nicht weiterverfolgt) <br>
+ <a href="anpidlv7.do"> anpidlv7.do</a> Zeitversetzt - ln(Zeitablauf) <br>
+ <a href="grpidlv9.do"> grpidlv9.do</a> Interaktionseffekte Klassenwechsel X Pol. Int. <br>
+ <a href="grpidlv10.do"> grpidlv10.do</a> Interaktionseffekte Aging Cons X Pol. Int. <br>
+ <a href="grpidlv11.do"> grpidlv11.do</a> Interaktionseffekte Arbeitslos X Pol. Int. <br>
+ <a href="grpidlv12.do"> grpidlv12.do</a> Interaktionseffekte Interaktionspartner X Pol. Int. <br>
+ <br>
+<br>
+* +-----------+ <br>
+* | Kapitel 4 | <br>
+* +-----------+ <br>
+<br>
+* Korrekturlauf!  Korrektur notwendig auf Grund eines Fehlers in <br>
+* crsimul. Korrektur in crsimul_c + Wiederholung der darauf aufbauenden <br>
+* Analysen <br>
+<br>
+<a href="crsimul_c.do"> crsimul_c.do </a>  /* Korrektur der Simulation */ <br>
+<a href="ansimul3_c.do"> ansimul3_c.do </a>  /* Variante von ansimul2, mit Min/Max statt p5/p95 */ <br>
+<a href="ansimul4_c.do"> ansimul4_c.do </a>  /* Vergleich Simulation - SOEP - Daten */ <br>
+<a href="ansimul5_c.do"> ansimul5_c.do </a>  /* Vergleich Simulation - Allbus - Daten */ <br>
+<a href="ansimul6_c.do"> ansimul6_c.do </a>  /* Vergleich Simulation (Mittelwerte) - SOEP/ALLBUS */ <br>
+<br>
+</body>
+
+</html>

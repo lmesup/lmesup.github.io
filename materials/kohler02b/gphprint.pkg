@@ -1,0 +1,11 @@
+v 2
+d Ausdruck der Graphiken von Kohler (2001) "Der demokratische Klassenkampf"
+d Dieser Do-File sorgt für die Umwandlung der Stata-Grafiken in 
+d EPS-Dateien. Er ist der jeweiligen Rechnerarchitektur anzupassen.
+d
+f gphprint.do
+
+
+
+
+
