@@ -1,0 +1,218 @@
+<html>
+
+<head>
+   <title>
+        master
+   </title>
+</head>
+
+<body>
+
+<h1>
+    Master-Do-File zu
+</h1>
+
+<h2>
+    Kohler, Ulrich, 1998: Zur Attraktivit&auml;t der Gr&uuml;nen bei
+    &auml;lteren W&auml;hlern, K&ouml;lner Zeitschrift f&uuml;r
+    Soziologie und Sozialpsychologie 50: 536-559.
+</h2>
+
+Der Master-Do-File erlaubt zusammen mit den Analyse-Do-File einen
+vollst&auml;ndige Reproduktion aller vorgenommenen Analysen des
+Aufsatzes. Um die kompletten Analysen zu reproduzieren m&uuml;ssen
+alle Do-Files gespeichert werden. Danach kann die komplette
+Analyse durch den Stata-Befehl
+<p>
+
+<tt>
+    . do master
+</tt>
+<p>
+
+mit Stata reproduziert werden. Vorraussetzung ist allerdings, dass
+die komplette SOEP-Datenbank unter c:\user\data\soep installiert
+ist. Au&szlig;erdem mu&szlig; der kumulierte Allbus (bzw. die
+ben&ouml;tigten Variablen des kumulierten Allbus) in Stata-Format
+unter dem Namen "kaallb.dta" im Arbeitsverzeichnis installiert
+sein. Bei anderer Verzeichnisstruktur m&uuml;ssen die Dateinamen
+der "use"-Befehle in den "Create"-Do-Files (cr*.do) entsprechend
+angepa&szlig;t werden.
+<p>
+
+Zur Reproduktion einzelner Analysen werden teilweise spezielle
+Datens&auml;tze ben&ouml;tigt. Diese Datens&auml;tze werden mit
+den Create-Do-Files erzeugt (cr*.do). Jeder Create-Do-File erzeugt
+einen Stata-Systemdatensatz, wobei "cringle.do" den
+Systemdatensatz "ingle.dta" erzeugt, "cringle1.do" den
+Systemdatensatz "ingle2.dta" usw.
+<p>
+
+Der Master-Do File verwendet den Befehl <tt>anal</tt>. Es
+handelt sich dabei den externen Befehl <tt>anal.ado</tt>:
+<p>
+
+<tt>
+    program define anal
+    <br>
+    &nbsp;&nbsp;&nbsp;capture log close
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;set more 1
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;clear
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;program drop _all
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;log using `1'.log, replace
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;display "Analysis do-file `1' run on $S_DATE at $S_TIME"
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;capture noisily do `1'
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;local myrc = _rc
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;log close
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;exit `myrc'
+    &nbsp;&nbsp;&nbsp;<br>
+    end
+    <br>
+    exit
+</tt>
+<p>
+
+<tt> anal.ado </tt> regelt das &Ouml;ffnen und Schliessen von
+Log-Files und kann durch den Befehl <tt> do </tt> ersetzt werden.
+<p>
+
+Durch die Kommentierung erlaubt der Master-Do-File eine Zuordnung
+der Analyse-Do-Files zu den Ergebnissen des Aufsatzes. Um Probleme mit
+ver&auml;nderlichen Zeilenumbr&uuml;chen zu vermeiden, sollte der Maser-Do-File
+aus dem Paket der &uuml;brigen
+<a href="kohler98.zip">
+    Do-Files
+</a>
+zur Replikation verwendet werden.
+
+<div align=right>
+    <font size=-2>
+        master.do
+    </font>
+</div>
+
+<hr WIDTH="100%">
+
+<tt>
+    * Replikation von Klein/Arzheimer (1997)
+    <br>
+    * Allbus-Datensatz via SPSS (crkaallb.sps) und Stat-Transfer
+    do crkasoep
+    <br>
+    do crabb1
+    <br>
+    do anabb1
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp; /* Graphik 3 Gruene PID X Welle X Alter X Kohorte */
+    <br>
+    do anabb1a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;  /* wie oben, aber Allbus */
+    <br>
+    do cringle
+    <br>
+    do cringle1
+    <br>
+    do aningle1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp; /* Graphik 1 Entwicklung Postmat */
+    <br>
+    anal aningle2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       /* Graphik 2 Vergleich Stabilitaet Postmat-PID */
+    <br>
+    * Analysen nach Markus 1983
+    <br>
+    anal anmark1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         /* SOEP, mit Fixierung -> veroeffentlicht */
+    <br>
+    anal anmark2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        /* SOEP, ohne Fixierung -> unveroeffentlicht */
+    <br> anal anmark3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; /* Allbus, mit Fixierung -> unveroeffentlicht */
+    <br>
+    anal anmark4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         /* SOEP, Individualdaten -> veroeffentlicht */
+    <br>
+    anal anstabil &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*
+         Vergleich PID-Stabiltaet der Kohorten -> unveroff.*/
+    do cragecon
+    <br>
+    anal agecon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp; /* Fixed-effects Modelle zur aging-cons.-thesis */
+    <p>
+
+    * Nochmal alle Analysen, diesmal, wenn moeglich mit Laengschnittgewichten
+    <br>
+    do aning1_w
+    <br>
+    do anabb1_w
+    <br>
+    do anmark_w &nbsp; /* stabil.ado gewichtung nicht moeglich */
+    <br>
+    do agecon_w
+    <p>
+
+    * Ueberpruefung der Validitaet des Konservatismus-Index
+    <br>
+    do anindex
+    <p>
+
+    * Ueberpruefung der latenten Variable Parteipraeferenz
+    <br>
+    * mit latenter Klassenanalyse in LEM (unveroeffentlicht)
+    anal lca &nbsp;&nbsp;
+      /* Anschliesend weiterbearbeitung von lca.log zu lca*.dat */
+    <br>
+    * in DOS: c:\privprg\lem\lem lca*.lem lca*.out
+    <p>
+
+    * Zusaetzliche Analysen fuer Antwort auf die Replik von Klein und Arzheimer
+    <br>
+    anal anabb1b
+    <br>
+    do crabb1
+    <br>
+    anal anabb1c
+    <p>
+
+    exit
+
+    <p>
+    Fuer die Praesentation der Graphiken werden folgende Stage-Do-Files
+    benoetigt:
+    <br>
+    abb1.sge &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -> abb1
+    <br>
+    anmark_1.sge&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp; -> abb5
+    <br>
+    anmark_2.sge
+    <p>
+
+    Die Graphiken 2 und 3 (abb2.eps und abb3.eps) wurden von Hand aus
+    <br>
+    ingle1.gph und ingle2.gph erstellt (-> ingle1s.gph und ingle2s.gph).
+    <br>
+</tt>
+
+<hr WIDTH="100%">
+
+<div align=right>
+    <font size=-2>
+        <a href="../index.html" target = "top" >
+            Hauptseite
+        </a>
+    </font>
+</div>
+
+
+</body>
+</html>
