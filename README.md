@@ -6,6 +6,7 @@
 
 Verwaltet durch Claudia Saalbach und Johannes Schütt
 
+---
 
 ### Änderung einer Seite
 
