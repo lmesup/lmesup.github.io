@@ -1,0 +1,80 @@
+<html>
+<header>
+	  Statusinkonsistenz und Entstrukturierung von Lebenslagen
+</header>
+
+<body>
+<h1>
+  Statusinkonsistenz und Entstrukturierung von Lebenslagen.
+  Empirische Überprüfung zweier Individualisierungshypothesen 
+  mit Querschnittsdaten aus 28 Ländern 
+</h1>
+
+<p> 
+  This is the documentation page for "Ulrich Kohler (2005):
+  Statusinkonsistenz und Entstrukturierung von Lebenslagen. 
+  Empirische Überprüfung zweier Individualisierungshypothesen mit
+  Querschnittsdaten aus 28 Ländern"</p>
+
+<p> On this page you may found all Stata do-files for the analyses in
+the paper. The names of the do-files required for each analysis can
+found in the paper. </p>
+
+<p> With the <a href = "master.do"> master do-file</a> you can
+replicate every analysis of the paper. For this you need to download
+all do-files. This is most easily be done with the following Stata
+commands</p>
+
+
+<tt>
+. net from http://kohler.wzb.eu/indi05/
+<br>
+. net get do
+</tt>
+
+<p> In what follows you can found a complete list of the
+do-files. </p>
+
+<p><b> Note: </b> Some of the Do-Files requires the installation of
+additional Stata programs. The installation of those programs is done
+automatically within the do-files. Hence, your computer should be
+connected to the internet. </p>
+
+
+<a href=crresultset0.do>crresultset0.do</a>           // Initialize Result-Set (Country-Data)<br>
+<a href=crplurality.do>crplurality.do</a>            // Enogenity/Diversity/Devinace <br>
+<a href=SEentropy.do>SEentropy.do</a>              // Bootstrap für Entropy -> writes to SEentropy.dta<br>
+<a href=SEdeviance.do>SEdeviance.do</a>             // Bootstrap für Devianz -> writes to SEdeviance.dta<br>
+<a href=crplurality_ci.do>crplurality_ci.do</a>         // Merge CI to plurality Results-Set<br>
+<a href=grplurality_by_country.do>grplurality_by_country.do</a> // Plurality by Country-Graph<br>
+<a href=grplurality_by_GDP.do>grplurality_by_GDP.do</a>     // Plurality by GDP-Graph<br>
+<a href=anplurality_by_GDP.do>anplurality_by_GDP.do</a>     // Plurality by GDP-Regression<br>
+<a href=crplurality_ci_b.do>crplurality_ses_ci_b.do</a>   // Adds Class Coefs to Result-Set<br>
+<a href=grclass_by_GDP.do>grclass_by_GDP.do</a>         // LOWESS-Curves of b-coeff by GDP<br>
+<a href=anclass_by_GDP.do>anclass_by_GDP.do</a>         // Regression Modell with class-GDP-Interaction<br>
+<a href=grGDP_by_country.do>grGDP_by_country.do</a>       // Graph GDP by Country <br>
+<a href=anGDP.do>anGDP.do</a>                  // Some numbers for the text<br>
+<a href=anplurality_by_GDP2.do>anplurality_by_GDP2.do</a>    // anplurality_by_GDP.getrennt. für Ländergruppen<br>
+<a href=grclass_by_GDP2.do>grclass_by_GDP2.do</a>        // grclass_by_GDP.do mit Referenzgr. Dienstkl. 1<br>
+<a href=anclass_by_GDP2.do>anclass_by_GDP2.do</a>        // anclass_by_GDP.do mit Referenzgr. Dienstkl. 1<br>
+<a href=grclass_by_GDP3.do>grclass_by_GDP3.do</a>        // grclass_by_GDP.do mit Referenzgr. un- und angel. Arb.<br>
+<a href=anclass_by_GDP3.do>anclass_by_GDP3.do</a>        // anclass_by_GDP.do mit Referenzgr. un- und angel. Arb.<br>
+
+<br>Color-Graphics for Slide-Presentations<br>
+<a href=grclass_by_GDP3_fol.do>grclass_by_GDP3_fol</a>        // grclass_by_GDP.do mit Referenzgr. un- und angel. Arb. <br>
+<a href=grplurality_by_country_fol.do>grplurality_by_country_fol</a> // Plurality by Country-Graph <br>
+<a href=grplurality_by_GDP_fol.do>grplurality_by_GDP_fol</a>     // Plurality by GDP-Graph <br>
+<a href=grGDP_by_country_fol.do>grGDP_by_country_fol</a>       // Graph GDP by Country <br>
+
+
+<br> Double-Checks <br>
+<a href=anr2diff_by_GDP.do>anr2diff_by_GDP</a>     // R2-Differences of Class by GDP<br>
+<a href=anclass_by_GDP_noedu.do>anclass_by_GDP_noedu</a>   // No Education-Control<br>
+
+<br>Rework after KZfSS-Review<br>
+<a href=crplurality_ci_b2.do>crplurality_ci_b2</a>     // "Lebenslagen" als AV<br>
+<a href=grclass_by_GDP4.do>grclass_by_GDP4</a>         // Lebenslagen als AV<br>
+<a href=anclass_by_GDP4.do>anclass_by_GDP4</a>         // Lebenslagen als AV<br>
+
+</body>
+</html>

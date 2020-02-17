@@ -1,0 +1,42 @@
+v 2
+d Analysen zu Kohler (2004) "Empirische Überprüfung zweier Individualisierungshyothesen"
+d Das Paket {bf:do} umfasst alle  Do-Files in nicht komprimierter 
+d Form. 
+d
+d Eine knappe Beschreibung der Do-Files findet sich im Master-Do-File.
+d Dieser ist im Paket enthalten.
+d
+f SEdeviance.do
+f SEentropy.do
+f anGDP.do
+f anclass_by_GDP.do
+f anclass_by_GDP2.do
+f anclass_by_GDP3.do
+f anclass_by_GDP4.do
+f anclass_by_GDP_noedu.do
+f anplurality_by_GDP.do
+f anplurality_by_GDP2.do
+f anr2diff_by_GDP.do
+f crplurality.do
+f crplurality_ci.do
+f crplurality_ci_b.do
+f crplurality_ci_b2.do
+f crresultset0.do
+f grGDP_by_country.do
+f grGDP_by_country_fol.do
+f grclass_by_GDP.do
+f grclass_by_GDP2.do
+f grclass_by_GDP3.do
+f grclass_by_GDP3_fol.do
+f grclass_by_GDP4.do
+f grplurality_by_GDP.do
+f grplurality_by_GDP_fol.do
+f grplurality_by_country.do
+f grplurality_by_country_fol.do
+f master.do
+
+
+
+
+
+
