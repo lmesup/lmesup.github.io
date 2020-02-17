@@ -1,0 +1,94 @@
+<html>
+<header>
+Under what circumstances could maximizing turnout alter an election result?
+</header>
+
+<body>
+<h1>
+Under what circumstances could maximizing turnout alter an election result?
+</h1>
+
+<p> This is the documentation page for "Kohler, Ulrich  and Richard
+  Rose (2010): Under what circumstances could maximizing turnout alter
+  an election result? Representation 46 (2) 119--138
+</p>
+
+<p> On this page you may found all Stata do-files for the analyses in
+the paper. </p>
+
+<p> With the <a href = "master.do"> master do-file</a> you can
+replicate every analysis of the paper. For this you need to download
+all do-files. 
+
+<p> In what follows you find the complete list of the do-files. They
+appear in the order of their making during the preparation of the
+paper.</p>
+
+<h2> Initial Analyses </h2>
+
+<br><a href=cress04.do>cress04.do</a> 
+<br><a href=an1st.do>an1st.do</a>     First tries with some multilevel models
+<br><a href=antrade.do>antrade.do</a>   Multilevel models for trade unions
+<br><a href=antry.do>antry.do</a>     Try out using mlogit as multiple discriminant analysis
+<br><a href=anlrdes.do>anlrdes.do</a>   Bivariate correlation of modified lr scale with some indep.
+<br><a href=anvoter_valid.do>anvoter_valid.do</a>   Comparison of survey turnout with official turnout
+<br><a href=grses.do>grses.do</a>     Descriptive graph for bivariate ses-voter relationship
+<br><a href=anagg.do>anagg.do</a>     Influences of aggregate level variables
+di anbase   Baseline Models
+<br><a href=anses.do>anses.do</a>     Voteing by SES
+<br><a href=grpol.do>grpol.do</a>     Descriptive graph for bivariate pol-voter relationship
+<br><a href=anpol.do>anpol.do</a>     Voteing by Political variables
+<br><a href=grlr.do>grlr.do</a>      Left-Right by country
+<br><a href=anlrvotechg.do>anlrvotechg.do</a>   Extrapolation, Rose Proposal 12 July
+<br><a href=anchange.do>anchange.do</a>   Extrapolation: mlogit, Germany
+<br><a href=anexpol1.do>anexpol1.do</a>   Extrapolation, Method 1
+<br><a href=anexpol2.do>anexpol2.do</a>   Extraplation with mlogit, GB and DE
+<br><a href=anexpol4.do>anexpol4.do</a>   Extrapolation with mlogit, DE 1998 and 2005, various assumptions
+
+<h2> Restart after Election Studies volume </h2>
+
+<br><a href=crelections.do>crelections.do</a>    Create Election Metadata
+<br><a href=andescribe.do>andescribe.do</a>     Describe Election Metadata extensivly
+<br><a href=anelectiontable.do>anelectiontable.do</a>   Table for Election characteristics
+<br><a href=anpol1.do>anpol1.do</a>   Voting by political variables without trust and politics too complicated
+<br><a href=anpol2.do>anpol2.do</a>   anpol without satisfactio with government
+<br><a href=grlevbycntry.do>grlevbycntry.do</a>   Graph voteing and Leverage by country  figure 2
+<br><a href=anlr.do>anlr.do</a>   Left-Right figures and tables  figure 4 (discussion paper)
+<br><a href=anlr_by_voteing.do>anlr_by_voteing.do</a>   Left-Right by voters/nonvoters  table 1
+<br><a href=grturnout_by_country.do>grturnout_by_country.do</a>    figure 1
+<br><a href=grpartynum.do>grpartynum.do</a>              figure 3
+<br><a href=simulation.do>simulation.do</a>              figure B
+
+<h2> Revision after ES - review </h2>
+
+<br><a href=crelections2.do>crelections2.do</a>     Add Electionsystem to Election Metadata
+<br><a href=cress04_1.do>cress04_1.do</a>        Use edition 3 of ESS
+<br><a href=ansumtab.do>ansumtab.do</a>         A comprehensive table
+<br><a href=aninvalid.do>aninvalid.do</a>        Plot of invalid votes by turnout
+<br><a href=anct.do>anct.do</a>             Quantify the critical treshold
+<br><a href=anct1.do>anct1.do</a>            Quantify the critical treshold, correction 1
+<br><a href=ansumfig.do>ansumfig.do</a>         A comprehensive figure
+<br><a href=anUSbystate.do>anUSbystate.do</a>      Turnout by gap & Probability of Office-Change
+<br><a href=anUS2000.do>anUS2000.do</a>         A table for US 2000 election
+<br><a href=anct2.do>anct2.do</a>            Correction 2 -- Using absolut numbers
+<br><a href=anlr_by_voteing1.do>anlr_by_voteing1.do</a>   Run this for edition 3 of ESS
+
+<h2> Revision after ES - reject </h2>
+
+<br><a href=anct3.do>anct3.do</a>            Critical treshold with Plutzer assumptions (Buggy)
+<br><a href=anct4.do>anct4.do</a>             figure 6
+<br><a href=grturnout_by_country1.do>grturnout_by_country1.do</a>    figure 1
+<br><a href=grlevbycntry1.do>grlevbycntry1.do</a>     figure 2
+<br><a href=grpartynum1.do>grpartynum1.do</a>       figure 3
+<br><a href=anlr_by_voteing2.do>anlr_by_voteing2.do</a>   figure 4
+<br><a href=grgap.do>grgap.do</a>             figure 5
+
+<h2>Figures for Representation-Submission</h2>
+<br><a href=anct5.do>anct5.do</a>           
+<br><a href=grturnout_by_country2.do>grturnout_by_country2.do</a>    figure 1
+<br><a href=grlevbycntry2.do>grlevbycntry2.do</a>     figure 2
+<br><a href=grpartynum2.do>grpartynum2.do</a>       figure 3
+<br><a href=grgap1.do>grgap1.do</a>             figure 5
+<br><a href=anct6.do>anct6.do</a>            figure 6
+
+
