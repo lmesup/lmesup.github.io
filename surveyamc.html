@@ -110,7 +110,7 @@
                                         <!-- <object data='https://lmesup.github.io/surveyamc/kn_quest.pdf' type='application/pdf' width='100%'></object> -->
                                         <!-- <iframe src='https://lmesup.github.io/surveyamc/kn_quest.pdf' width='100%'></iframe> -->
 
-                                        <pdfdiv id="app">
+                                        <div id="app">
                                             <div role="toolbar" id="toolbar">
                                                 <div id="pager">
                                                     <button data-pager="prev">Zurück</button>
@@ -123,128 +123,128 @@
                                             <div id="viewport-container">
                                                 <div role="main" id="viewport"></div>
                                             </div>
+                                        </div>
+                                        <script src="https://unpkg.com/pdfjs-dist@2.0.489/build/pdf.min.js"></script>
+                                        <script src="https://lmesup.github.io/js/pdfviewer.js"></script>
+                                        <script>
+                                            initPDFViewer("https://lmesup.github.io/surveyamc/kn_quest.pdf");
+
+                                        </script>
+
                                     </div>
-                                    <script src="https://unpkg.com/pdfjs-dist@2.0.489/build/pdf.min.js"></script>
-                                    <script src="https://lmesup.github.io/js/pdfviewer.js"></script>
-                                    <script>
-                                        initPDFViewer("https://lmesup.github.io/surveyamc/kn_quest.pdf");
-
-                                    </script>
-
                                 </div>
                             </div>
+
+                            <div class="visible-sm visible-xs" id="col2row2">
+                                <img src="https://lmesup.github.io/surveyamc/kn_quest.png" alt="Example Questionnaire" width="70%" class="img-responsive center">
+                                view the full questionnaire > <a href="https://lmesup.github.io/surveyamc/kn_quest.pdf" target="_blank">pdf</a>
+                            </div>
+
                         </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
 
-                        <div class="visible-sm visible-xs" id="col2row2">
-                            <img src="https://lmesup.github.io/surveyamc/kn_quest.png" alt="Example Questionnaire" width="70%" class="img-responsive center">
-                            view the full questionnaire > <a href="https://lmesup.github.io/surveyamc/kn_quest.pdf" target="_blank">pdf</a>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Notes on use</h3>
+                            <p style="border-top: solid 1px #2C3744;  padding: 0px 0px 10px 0px">
+                                <ul>
+                                    <li>To create machine-readable questionnaires with SurveyAMC you will need a latex distribution, an editor, a pdf-viewer and the LateX package "surveyamc.sty". Surveyamc.sty is made available on the SurveyAMC project
+                                        <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository.</a></span> You can download it there, copy it to your latex working directory and then load it with \usepackage{surveyamc} in the preambel of your tex document. For more detailed information see the documentation.</li>
+                                    <li>For processing the completed questionnaires into a dataset you will need the Auto-Multiple-Choice Software (Version 1.4.0).
+                                        Informations about installation and usage you can find at
+                                        <span><a href="https://www.auto-multiple-choice.net/" target="_blank">www.auto-multiple-choice.net</a></span>.</li>
+                                </ul>
+                            </p>
                         </div>
-
+                        <!--col2row1-->
                     </div>
                     <!--col2row1-->
-                </div>
-                <!--col2row1-->
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <!--col2row1-->
-                    <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <!--col2row1-->
-                        <h3>Notes on use</h3>
-                        <p style="border-top: solid 1px #2C3744;  padding: 0px 0px 10px 0px">
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Documentation</h3>
+                            <p style="border-top: solid 1px #2C3744;  padding: 10px 0px 10px 0px">
+                                The SurveyAMC package is fully documented. The documentation helps you to get started with your own survey project. It contains:
+                                <ul>
+                                    <li> installation guidelines</li>
+                                    <li> example questionnaire </li>
+                                    <li> code snippets for a variety of question format options</li>
+                                    <li> style template for the general page layout</li>
+                                    <li> description of the "DRY" workflow for generating several survey products from one source file </li>
+                                </ul>
+                                The full <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/blob/master/documentation/doc_main.pdf" target="_blank">documentation</a></span> of SurveyAMC ist hosted on the project <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository</a></span>.
+                            </p>
+                        </div>
+                        <!--col2row1-->
+                    </div>
+                    <!--col2row1-->
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--col2row1-->
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Questionnaire Templates</h3>
+                            <p style="border-top: solid 1px #2C3744;  padding: 10px 0px 10px 0px">
+                                Different templates may help you to create your first questionnaire with SurveyAMC. You can find all templates on the SurveyAMC project
+                                <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository</a></span>. The list of templates is constantly being updated.
+                                Follow the link, copy the files to your project directory and adjust them to fit your personal needs.
+                            </p>
+
                             <ul>
-                                <li>To create machine-readable questionnaires with SurveyAMC you will need a latex distribution, an editor, a pdf-viewer and the LateX package "surveyamc.sty". Surveyamc.sty is made available on the SurveyAMC project
-                                    <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository.</a></span> You can download it there, copy it to your latex working directory and then load it with \usepackage{surveyamc} in the preambel of your tex document. For more detailed information see the documentation.</li>
-                                <li>For processing the completed questionnaires into a dataset you will need the Auto-Multiple-Choice Software (Version 1.4.0).
-                                    Informations about installation and usage you can find at
-                                    <span><a href="https://www.auto-multiple-choice.net/" target="_blank">www.auto-multiple-choice.net</a></span>.</li>
+                                <li>Template <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master/templates/documentation" target="_blank">"Documentation"</a></span></li>
+                                <li>Template <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master/templates/konstanz" target="_blank"> "Konstanz"</a></span></li>
                             </ul>
-                        </p>
-                    </div>
-                    <!--col2row1-->
-                </div>
-                <!--col2row1-->
-
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <!--col2row1-->
-                    <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                        </div>
                         <!--col2row1-->
-                        <h3>Documentation</h3>
-                        <p style="border-top: solid 1px #2C3744;  padding: 10px 0px 10px 0px">
-                            The SurveyAMC package is fully documented. The documentation helps you to get started with your own survey project. It contains:
-                            <ul>
-                                <li> installation guidelines</li>
-                                <li> example questionnaire </li>
-                                <li> code snippets for a variety of question format options</li>
-                                <li> style template for the general page layout</li>
-                                <li> description of the "DRY" workflow for generating several survey products from one source file </li>
-                            </ul>
-                            The full <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/blob/master/documentation/doc_main.pdf" target="_blank">documentation</a></span> of SurveyAMC ist hosted on the project <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository</a></span>.
-                        </p>
                     </div>
                     <!--col2row1-->
-                </div>
-                <!--col2row1-->
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <!--col2row1-->
-                    <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <!--col2row1-->
-                        <h3>Questionnaire Templates</h3>
-                        <p style="border-top: solid 1px #2C3744;  padding: 10px 0px 10px 0px">
-                            Different templates may help you to create your first questionnaire with SurveyAMC. You can find all templates on the SurveyAMC project
-                            <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master" target="_blank">repository</a></span>. The list of templates is constantly being updated.
-                            Follow the link, copy the files to your project directory and adjust them to fit your personal needs.
-                        </p>
-
-                        <ul>
-                            <li>Template <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master/templates/documentation" target="_blank">"Documentation"</a></span></li>
-                            <li>Template <span><a href="https://gitlab.com/CSaalbach/surveyamc-project/tree/master/templates/konstanz" target="_blank"> "Konstanz"</a></span></li>
-                        </ul>
-                    </div>
-                    <!--col2row1-->
-                </div>
-                <!--col2row1-->
-
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <!--col2row1-->
-                    <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h3>Companion Programmes</h3>
+                            <p style="border-top: solid 1px #2C3744">
+                                <ul>
+                                    <li>automated codebook</li>
+                                    <li>label dataset, result tables or graphics </li>
+                                </ul>
+                            </p>
+                        </div>
                         <!--col2row1-->
-                        <h3>Companion Programmes</h3>
-                        <p style="border-top: solid 1px #2C3744">
-                            <ul>
-                                <li>automated codebook</li>
-                                <li>label dataset, result tables or graphics </li>
-                            </ul>
-                        </p>
                     </div>
                     <!--col2row1-->
-                </div>
-                <!--col2row1-->
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 60px">
-                    <!--col2row1-->
-                    <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 60px">
                         <!--col2row1-->
-                        <h5>Licence</h5>
-                        <p>
-                            Copyright (c) Claudia Saalbach 2019-2020. Surveyamc.sty is a modified version of automultiplechoice.sty. It is free software: you can redistribute it and/or modify it under the terms of the GNU GENERAL PUBLIC LICENSE Version 3. Surveyamc.sty is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A ARTICULAR PURPOSE. See the GNU General Public License for more details.
-                        </p>
+                        <div class="visible-lg visible-md visible-sm visible-xs" id="col2row1">
+                            <!--col2row1-->
+                            <h5>Licence</h5>
+                            <p>
+                                Copyright (c) Claudia Saalbach 2019-2020. Surveyamc.sty is a modified version of automultiplechoice.sty. It is free software: you can redistribute it and/or modify it under the terms of the GNU GENERAL PUBLIC LICENSE Version 3. Surveyamc.sty is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A ARTICULAR PURPOSE. See the GNU General Public License for more details.
+                            </p>
+                        </div>
+                        <!--col2row1-->
                     </div>
                     <!--col2row1-->
+
+
+                    <!-- ############################################ -->
+
                 </div>
-                <!--col2row1-->
-
-
-                <!-- ############################################ -->
-
+                <!--col2-->
             </div>
             <!--col2-->
         </div>
-        <!--col2-->
-    </div>
-    <!--tiles-->
+        <!--tiles-->
 
-    <span id="struktur_footer"></span>
+        <span id="struktur_footer"></span>
 
     </div>
     <!--main-->
