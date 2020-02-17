@@ -1,0 +1,12 @@
+v 2
+d Do-Files for "Internal Criteria for Representativeness for European
+Comparative Surveys"
+d
+p do  Do-Files 
+
+
+
+
+
+
+

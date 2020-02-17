@@ -1,0 +1,89 @@
+* B by Sampling Methods
+* kohler@wz-berlin.de
+
+version 9
+
+	// Intro
+	clear
+	set memory 80m
+	set more off
+	set scheme s1mono
+
+	// Data
+	use svydat04 if eu & sample != 6 & svymeth != 5
+	keep if weich == 1
+
+
+	// Calculate design effects 
+	svyset [pweight=dweight], strata(ost)
+	foreach survey in "EVS 1999" "ISSP 2002" "EB 62.1" {
+		quietly svy: mean women if iso3166_2=="DE" & survey=="`survey'"
+		estat effects
+		matrix D = r(deff)
+		local de`:word 1 of `survey'' = D[1,1]
+	}
+	svyset [pweight=dweight], strata(nirl)
+	foreach survey in "ISSP 2002" "EB 62.1" {
+		quietly svy: mean women if iso3166_2=="GB" & survey=="`survey'"
+		estat effects
+		matrix D = r(deff)
+		local gb`:word 1 of `survey''  = D[1,1]
+	}
+
+	// B
+	collapse (mean) womenp=women sample back subst (count) N=women [aw=dweight], by(survey iso3166_2)
+	gen B = abs((womenp - .5)/sqrt(.5^2/N))
+
+	replace B = abs((womenp - .5)/sqrt(.5^2/N *`deEB')) if survey=="EB 62.1" & iso3166_2 == "DE"
+	replace B = abs((womenp - .5)/sqrt(.5^2/N *`deEVS')) if survey=="EVS 1999" & iso3166_2 == "DE"
+	replace B = abs((womenp - .5)/sqrt(.5^2/N *`deISSP')) if survey=="ISSP 2002" & iso3166_2 == "DE"
+	replace B = abs((womenp - .5)/sqrt(.5^2/N *`gbEB')) if survey=="EB 62.1" & iso3166_2 == "GB"
+	replace B = abs((womenp - .5)/sqrt(.5^2/N *`gbISSP')) if survey=="ISSP 2002" & iso3166_2 == "GB"
+
+	sort survey iso3166_2
+
+	label value sample sample
+	label define sample ///
+	  1 "SRS" 2 "Ind. reg."  3  "Add. reg."  4  "Rd. route"  5  "Unknown" ///
+	  , modify
+
+	label value back back
+	label define back ///
+	  -1 "N.a." 0 "No" 1 "Yes"                                                 ///
+	  , modify
+
+	label value subst subst
+	label define subst ///
+	   0 "No" 1 "Yes", modify
+
+	local opt `"nodraw ytitle("") medtype(marker) medmarker(ms(O) mc(black) msize(*1.5))"'
+	local opt `"`opt'  marker(1, ms(oh)) ytick(0(1)5, grid) "'
+	local opt `"`opt' box(1, lcolor(black) fcolor(white))"'
+	local opt `"`opt' graphregion(margin(zero))"'
+
+	// The Graph
+	graph                                                       ///
+	  box B                                                     ///
+	  , over(sample)  `opt'                                     ///
+	  title(Sampling method, bexpand box pos(12))               ///
+	  name(sample, replace) fxsize(68) 
+
+	graph                                                       ///
+	  box B                                                     ///
+	  , over(back)  `opt' ylabel(none)                          ///
+	  title(Back checks, bexpand box pos(12))                   ///
+	  name(back, replace) fxsize(40)
+	  
+	graph                                                       ///
+	  box B                                                     ///
+	  , over(subst)  `opt' ylabel(none)                         ///
+	  title(Substitution, bexpand box pos(12))                  ///
+	  name(subst, replace) fxsize(30)
+
+	graph combine sample back subst ///
+	  , rows(1) imargin(tiny) l1title("Absolute value of unit nonresponse bias", size(small)) xsize(6)
+
+	graph export anBmethod.eps, replace
+
+exit
+

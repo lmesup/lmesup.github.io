@@ -1,0 +1,26 @@
+v 2
+d Internal Criteria for Representativeness
+d This package collects all Do-files of the paper in
+d uncompressed form
+d
+f crsvydat01.do
+f crsvydat02.do
+f ansvydes.do
+f ansample.do
+f anresp.do
+f crsvydat03.do
+f anQhresp.do
+f anQhdi.do
+f anQreach.do
+f anQsample.do
+f anQback.do
+f anQsubst.do
+f anQsurvey.do
+f anQmethod.do
+f anQctry.do
+f anQrwithin.do
+f anQhresmeth.do
+f anQrwithin1.do
+f anQreachmeth.do
+
+	
