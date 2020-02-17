@@ -21,5 +21,5 @@ Falls Sie den Inhalt einer Seite verändern möchten:
 5. Überprüfen Sie Ihre Änderungen und senden Sie anschließend den Pull request 
    (kommentieren Sie den Request ggf. und geben Sie einen passenden Titel).
 6. Wir werden ihre vorgenommenen Änderungen prüfen und sie dann für das Repository übernehmen.
-
+<br/><br/>
 Achten Sie darauf, dass Ihr geforktes Repository auf dem neusten Stand ist, bevor Sie Änderungen vornehmen.
