@@ -7,7 +7,7 @@
 Verwaltet durch Claudia Saalbach und Johannes Schütt
 
 ---
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://www.uni-potsdam.de/typo3conf01/ext/up_template/Resources/Public/Images/logos/up_logo_university_2.png "Universität Potsdam")
 
 ### Änderung einer Seite
 
