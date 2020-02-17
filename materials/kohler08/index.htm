@@ -1,0 +1,87 @@
+<html>
+<header>
+ Assessing the quality of European surveys. Towards an open method of coordination for survey data.
+</header>
+
+<body>
+<h1>
+ Assessing the quality of European surveys. Towards an open method of coordination for survey data.
+</h1>
+
+<p> 
+  This is the documentation page for "Ulrich Kohler (2006):
+  Assessing the quality of European surveys. Towards an open method of
+  coordination for survey data. Pg. xxx-xxx in Alber, Jens, Tony Fahey and
+  Chiara Saraceno (Eds.), Social conditions and quality of life in the enlarged
+  Europe. London: Routledge (in preparation)</p>
+
+<p> On this page you may found all Stata do-files for the analyses in
+the paper. The names of the do-files required for each analysis are cited
+in the paper. </p>
+
+<p> With the <a href = "master.do"> master do-file</a> you can
+replicate every analysis of the paper. For this you need to download
+all do-files. This is most easily be done with the following Stata
+commands</p>
+
+
+<tt>
+. net from http://kohler.wz-berlin.de/indi05/
+<br>
+. net get do
+</tt>
+
+<p> In what follows you find the complete list of the
+do-files. They appera in the order of their making during the preparation of
+the paper.</p>
+
+
+<h2> Pre-work by luniak@wz-berlin.de</h2>
+<br><a href="resultset1.do">resultset1.do</a>	Anteil Frauen - hart (ESS,EQLS) / weich (ESS,EQLS,ISSP,EVS,EM)
+<br><a href="resultset2.do">resultset2.do</a>	Anteil Frauen +  SE, Konfidenzintervall, Ranking + Graphiken
+<br><a href="resultset3.do">resultset3.do</a>	Wahrscheinlichkeit P(Frauen) für H0: P(Frauen) = .5
+<br><a href="cralldat.do">cralldat.do</a>	Zusammenführung aller Datensätze
+<br><a href="cralldat2.do">cralldat2.do</a>	alldat.dta mit Sampling-Informationen 
+<br><a href="crhdata.do">crhdata.do</a>	Datenbasis für "harte Analysen"
+<br><a href="crwdata.do">crwdata.do</a>	Datenbasis für "weiche Analysen"
+<br><a href="resultset5.do">resultset5.do</a>	weiche Analyse: Stadt-Land
+<br><a href="resultset6.do">resultset6.do</a>	harte Analyse: Stadt-Land
+<br><a href="resultset7.do">resultset7.do</a>	weiche Analyse: Einkommen
+<br><a href="resultset8.do">resultset8.do</a>	harte  Analyse: Einkommen
+<br><a href="resultest9.do">resultest9.do</a>	weiche Analyse: Frauenanteil nach Quota 0/1
+
+<h2> Analysen von kohler@wz-berlin.de</h2>
+
+<br><a href="crsvydat01.do">crsvydat01.do</a>	Datasets + Aggregates from EQLS + SVY-Descriptions
+<br><a href="ansvydes01.do">ansvydes01.do</a>	Short description of Surveys
+<br><a href="anpwomen01.do">anpwomen01.do</a>	Fraction of Women with Confidence Bounds around true-Value
+<br><a href="ant01.do">ant01.do</a>	t by survey-characteristics
+<br><a href="ant02.do">ant02.do</a>	t by survey-characteristics (without mode of collection)
+<br><a href="anclogit01.do">anclogit01.do</a>	Conditional Logit Analysis for context-characteristcs
+<br><a href="ant03.do">ant03.do</a>	t by context-characteristics
+<br><a href="ansubgroup02.do">ansubgroup02.do</a>	A Description of the Gender homogenous Couples
+<br><a href="ansvydes02.do">ansvydes02.do</a>	Shorter description than ansvydes01
+<br><a href="ansample01.do">ansample01.do</a>	Information about Sampling-Methods
+<br><a href="ansample02.do">ansample02.do</a>	Sampling-Methods by Country and Survey
+<br><a href="anextern01.do">anextern01.do</a>	External Criteria of representativity
+<br><a href="anintern01.do">anintern01.do</a>	Internal Criteria of representativity
+<br><a href="ansummary.do">ansummary.do</a>	Table in a summary (somwhat shortcomming) 
+
+<br><a href="ansample02C.do">ansample02C.do</a>	colored version of ansample01
+
+
+<h2> Redressment after Berlin-Conference</h2>
+<br><a href="anresp01.do">anresp01.do</a>	Response-Rate Statistics
+<br><a href="ansample01_1.do">ansample01_1.do</a>	without Euromodule
+<br><a href="ansample02_1.do">ansample02_1.do</a>	without Euromodule
+<br><a href="anextern01_1.do">anextern01_1.do</a>	without Euromodule
+<br><a href="ansummary_1.do">ansummary_1.do</a>	without Euromoude
+
+ 
+</body>
+</html>
+ 
+ 
+ 
+
+ 
