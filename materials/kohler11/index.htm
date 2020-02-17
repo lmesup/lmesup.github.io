@@ -1,0 +1,96 @@
+<html>
+<header>
+ Estimating the potential impact of nonvoters
+</header>
+
+<body>
+<h1>
+ Estimating the potential impact of nonvoters on
+    outcomes of parliamentary elections in proportional systems with
+    an application to German national elections from 1949 to 2009.
+</h1>
+
+<p> This is the documentation page for "Kohler, Ulrich (2011):
+    Estimating the potential impact of nonvoters on outcomes of
+    parliamentary elections in proportional systems with an
+    application to German national elections from 1949 to 2009.
+    Electoral Studies.
+</p>
+
+<p> On this page you may found all Stata do-files for the analyses in
+the paper. </p>
+
+<p> With the <a href = "master.do"> master do-file</a> you can
+replicate all analyses of the paper. For this you need to download
+all do-files. 
+
+<p> In what follows you find the complete list of the do-files. They
+appear in the order of their making during the preparation of the
+paper.</p>
+
+<h2> Preliminary analyses </h2>
+<br><a href=crbtw.do>crbtw.do</a>: Data set of BTW
+<br><a href=crltw.do>crltw.do</a>: Data set of LTW
+<br><a href=crltwseats.do>crltwseats.do</a>: Seats in Landestag
+<br><a href=crelections.do>crelections.do</a>: Joint Data set of elections
+<br><a href=crbtwsurvey.do>crbtwsurvey.do</a>: Survey election data for BTW
+<br><a href=anseats.do>anseats.do</a>: Distribution of seats in BTW (checking the program)
+<br><a href=crltwsurvey.do>crltwsurvey.do</a>: Survey election data for LTW (thewes@wzb.eu)
+<br><a href=anseats1976.do>anseats1976.do</a>: Hypothetical distribution of seats 
+<br><a href=anparameters.do>anparameters.do</a>: L,G,NoP, for BTW and LTW
+*do anbrpotential: Potential power of state elections
+<br><a href=anlr.do>anlr.do</a>: Left-right by voteing
+<br><a href=crltwsvy.do>crltwsvy.do</a>: Meta-Daten Landtagswahl-Survey (thewes@wzb.eu)
+<br><a href=anltwsvydes.do>anltwsvydes.do</a>: Dokumentation of datasets (thewes@wzb.eu)
+<br><a href=anbtwsvydes.do>anbtwsvydes.do</a>: Dokumentation of BTW datasets
+
+<h2>Starting a fork for participation_model</h2>
+<br><a href=crpopweights.do>crpopweights.do</a>: Population weights from state electorates
+<br><a href=grindeps.do>grindeps.do</a>: Independent variables by election date
+<br><a href=anmfit.do>anmfit.do</a>: Count r^2 for regression models
+<br><a href=anmpred1.do>anmpred1.do</a>: Predicted values and CI (for average non-voter)
+<br><a href=anmpred2.do>anmpred2.do</a>: Bootstraped Predicted values
+<br><a href=grbehavdiff.do>grbehavdiff.do</a>: Difference between Voters and Non-voters
+<br><a href=grseatshat.do>grseatshat.do</a>: Change in seats per party 
+<br><a href=grgallagher.do>grgallagher.do</a>: Gallagher Index
+<br><a href=angovchange.do>angovchange.do</a>: Probability of government change
+
+<h2>Return to Nichtwähler-Induziert Zäsuren der Bundesrepublik Deutschland</h2>
+<br><a href=anmpredltw.do>anmpredltw.do</a>: Version of anmpred2.do for LTW 
+<br><a href=grbehavdiff_ltw.do>grbehavdiff_ltw.do</a>: Difference between Voters and Non-voters (LTW)
+<br><a href=grseatshat_ltw.do>grseatshat_ltw.do</a>: Change in seats per party (LTW)
+<br><a href=grgallagher_ltw.do>grgallagher_ltw.do</a>: Gallagher Index (LTW)
+<br><a href=angovchange_ltw.do>angovchange_ltw.do</a>: Probability of government change (LTW)
+
+<h2>Update analysis for 2009 election (ES Resubmission)</h2>
+<br><a href=crbtw.do>crbtw.do</a>: Data set of BTW (updated to 2009)
+<br><a href=crltw.do>crltw.do</a>: Data set of LTW 
+<br><a href=crltwseats.do>crltwseats.do</a>: Seats in Landestag
+<br><a href=crelections.do>crelections.do</a>: Joint Data set of elections (updated to 2009)
+<br><a href=crpopweights.do>crpopweights.do</a>: Population weights (rerun file with updated btw.dta)
+<br><a href=crbtwsurvey2.do>crbtwsurvey2.do</a>: Survey election data for BTW (updated to 2009)
+<br><a href=grindeps2.do>grindeps2.do</a>: Independent variables by election date
+<br><a href=anmfit2.do>anmfit2.do</a>: Count r^2 for regression models
+<br><a href=anmpred22.do>anmpred22.do</a>: Bootstraped Predicted values
+<br><a href=grbehavdiff2.do>grbehavdiff2.do</a>: Difference between Voters and Non-voters
+<br><a href=grseatshat2.do>grseatshat2.do</a>: Change in seats per party 
+<br><a href=grgallagher2.do>grgallagher2.do</a>: Gallagher Index
+<br><a href=angovchange2.do>angovchange2.do</a>: Probability of government change
+
+<h2>Check variabilty with T^Max</h2>
+<br><a href=grseatshat_100.do>grseatshat_100.do</a>: Change in seats per party (T^Max = 100)
+<br><a href=grgallagher_100.do>grgallagher_100.do</a>: Gallagher Index (T^Max = 100)
+<br><a href=angovchange_100.do>angovchange_100.do</a>: Probability of government change (T^Max = 100)
+
+<h2>Applying apportionment for district Voting '49 and '53</h2>
+<br><a href=anbtw49.do>anbtw49.do</a>: Check-out district voting of 1949
+<br><a href=anbtw53.do>anbtw53.do</a>: Check-out district voting of 1953
+<br><a href=anmpred23.do>anmpred23.do</a>: Bootstraped Predicted values
+<br><a href=crseats.do>crseats.do</a>: Apportionment using anmpred23_bs.dta
+<br><a href=grseatshat3.do>grseatshat3.do</a>: Change in seats per party 
+<br><a href=grgallagher3.do>grgallagher3.do</a>: Gallagher Index
+<br><a href=angovchange3.do>angovchange3.do</a>: Probability of government change
+<br><a href=angovchange_by_tmax.do>angovchange_by_tmax.do</a>: Check variablity of results by T^Max
+
+
+
