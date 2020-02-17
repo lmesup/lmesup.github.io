@@ -1,0 +1,28 @@
+v 2
+d Do-Files for Kohler (2005) "Changing Class Locations and Partisan Choice in Germany"
+d Package of Do-Files
+d
+f anmod1b.do  
+f anmod1fit.do
+f anmod1se.do 
+f anmod2b.do  
+f anmod2fit.do
+f anmod2se.do 
+f anmod3b.do  
+f anmod3fit.do
+f anmod3se.do 
+f anpidlv1.do 
+f anpidlv2.do 
+f crbe.do	    
+f cregp.do    
+f crpidlv.do  
+f crsimul.do  
+f crweights.do
+f gphprint.do 
+f grmod1.do   
+f grmod2.do   
+f grmod3.do   
+f grpidlv1.do 
+f grsimul1.do 
+f grtpaths.do 
+f master.do   

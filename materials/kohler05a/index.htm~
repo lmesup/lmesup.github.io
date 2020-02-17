@@ -1,0 +1,66 @@
+<html>
+<header>
+	  Changing Class Locations and Partisan Choice in Germany
+</header>
+
+<body>
+<h1>
+Changing Class Locations and Partisan Choice in Germany
+</h1>
+
+<p> This is the documentation page for the article "Ulrich Kohler
+(2004): Changing Class Locations and Partisan Choice in Germany", S. .. in 
+Zuckerman, Alan, (ed.)  The Social Logic of Politics</p>
+
+<p> On this page you may found all Stata do-files for the analyses in
+the paper. The names of the do-files required for each analysis can 
+found in the paper. </p>
+
+<p> With the <a href = "master.do"> master do-file</a> you can
+replicate every analysis in the paper. For this you need to download
+all do-files. This is most easily be done with the following Stata
+commands</p>
+
+
+<tt>
+. net from http://www.sowi.uni-mannheim.de/lesas/kohler02c
+<br>
+. net get do
+</tt>
+
+<p> In what follows you can found a complete list of the do-files. </p>
+
+<p><b> Note: </b> Some of the Do-Files requires the installation of
+additional Stata programs. The installation of those programs is done
+automatically within the do-files. Hence, your computer should be
+connected to the internet. </p>
+
+<br><a  href=crsimul.do>crsimul.do</a>    /* Simulation of the Data */
+<br><a  href=grsimul1.do>grsimul1.do</a>   /* Graph Results of Simulation */
+<br><a  href=grtpaths.do>grtpaths.do</a>   /* Produce Graphs like in Allison (1994) */
+<br><a  href=cregp.do>cregp.do</a>      /* Create Master-File for EGP-Classes */
+<br><a  href=crweights.do>crweights.do</a>  /* Create Data with weights and friends */
+<br><a  href=crpidlv.do>crpidlv.do</a>    /* Create Main Analyzing Data */
+<br><a  href=anpidlv1.do>anpidlv1.do</a> /* Describe pidlv.dta: number of respondents, obs etc. */
+<br><a  href=grpidlv1.do>grpidlv1.do</a> /* Distribution of obs/resp. */
+<br><a  href=anpidlv2.do>anpidlv2.do</a> /* Distribution independent vars */
+<br><a  href=anmod1fit.do>anmod1fit.do</a> /* Fit  */
+<br><a  href=anmod1b.do>anmod1b.do</a>  /* Coefficients */
+<br><a  href=crbe.do>crbe.do</a>      /* Creates Data with Between-Effects */ 
+<br><a  href=grmod1.do>grmod1.do</a> /* Graph Results */
+<br><a  href=anmod1se.do>anmod1se.do</a>  /* Rgroup Standardfehler */
+<br><a  href=anmod2fit.do>anmod2fit.do</a> /* Fit  */
+<br><a  href=anmod2b.do>anmod2b.do</a>  /* Coefficients */
+<br><a  href=grmod2.do>grmod2.do</a> /* Graph Results */
+<br><a  href=anmod2se.do>anmod2se.do</a>  /* Rgroup Standardfehler */
+<br><a  href=anmod3fit.do>anmod3fit.do</a> /* Fit  */
+<br><a  href=anmod3b.do>anmod3b.do</a>  /* Coefficients */
+<br><a  href=grmod3.do>grmod3.do</a> /* Graph Results */
+<br><a  href=anmod3se.do>anmod3se.do</a>  /* Rgroup Standardfehler */
+<br><a  href=gphprint.do>gphprint.do</a>
+
+
+
+
+
+
