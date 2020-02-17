@@ -1,0 +1,50 @@
+v 2
+d Delhy/Kohler (2005) "Globalisation of Reference Groups"
+d All Stata Do-Files for the paper
+d
+d
+f 1sttry.do
+f anaspir011.do
+f anaspir01.do
+f andiffr.do
+f anlevel01.do
+f anlsat011D.do
+f anlsat011.do
+f anlsat01.do
+f anlsat021.do
+f anlsat02.do
+f anlsat031.do
+f anlsat03.do
+f anlsat041.do
+f anlsat04.do
+f anlsat051.do
+f anlsat05.do
+f anlsatex1D.do
+f anlsatex1.do
+f anlsatex.do
+f anmiss1_1.do
+f anmiss1D.do
+f anmiss1.do
+f anmiss2.do
+f anmissHU.do
+f annocontrols.do
+f anreg1.do
+f anreg2_1.do
+f anreg2.do
+f anregdsat.do
+f anstlivsat1.do
+f anstlivsat.do
+f anvalid1D.do
+f anvalid1.do
+f anvalid2_1.do
+f anvalid2D.do
+f anvalid2.do
+f anvalid3.do
+f anvalid4.do
+f anwithin1.do
+f anwithin.do
+f crdata01.do
+f crdata02.do
+f crdata03.do
+f master.do
+

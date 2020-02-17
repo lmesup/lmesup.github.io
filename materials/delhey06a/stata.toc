@@ -1,0 +1,7 @@
+v 2
+d Delhey/Kohler (2005) "From Nationally Bounded to Pan-European
+d Inequalities? On the Importance of Foreign Countries as 
+d Reference Groups"
+d
+p do  Do-Files 
+
