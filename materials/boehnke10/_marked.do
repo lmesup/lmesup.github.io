@@ -1,0 +1,1 @@
+!find *.eps -exec epstopdf '{}' ';' 
