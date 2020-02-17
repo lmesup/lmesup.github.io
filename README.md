@@ -8,6 +8,7 @@ Verwaltet durch Claudia Saalbach und Johannes Schütt
 
 ---
 ![alt text](https://www.uni-potsdam.de/typo3conf01/ext/up_template/Resources/Public/Images/logos/up_logo_university_2.png "Universität Potsdam")
+<img src="https://www.uni-potsdam.de/typo3conf01/ext/up_template/Resources/Public/Images/logos/up_logo_university_2.png" style="float: right; margin-left: 10px; width:50px;" />
 
 ### Änderung einer Seite
 
