@@ -1,13 +1,14 @@
 #app {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
 }
 
 #toolbar {
     display: flex;
     align-items: center;
-    background-color: #d4d4d4;
+    background-color: #F2F2F2;
     font-family: 'Ubuntu', sans-serif;
     color: #2C3744;
     padding: 0.5em;
