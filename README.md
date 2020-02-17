@@ -7,7 +7,7 @@
 Verwaltet durch Claudia Saalbach und Johannes Schütt
 
 ---
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png]: "Logo Title Text 2"
 
 ### Änderung einer Seite
 
