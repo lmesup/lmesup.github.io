@@ -7,7 +7,6 @@
 Verwaltet durch Claudia Saalbach und Johannes Schütt
 
 ---
-<img src="https://www.uni-potsdam.de/typo3conf01/ext/up_template/Resources/Public/Images/logos/up_logo_university_2.png" width="90" />
 <br/>
 
 ### Änderung von Inhalt
